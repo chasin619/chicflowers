@@ -1,0 +1,92 @@
+[
+  {
+    "images": [
+      { "src": "/gallery-1.jpg" },
+      { "src": "/gallery-4.jpg" },
+      { "src": "/gallery-5.jpg" },
+      { "src": "/gallery-3.jpg" },
+      { "src": "/gallery-2.jpg" }
+    ],
+    "venue": "Creative Corners"
+  },
+  {
+    "images": [
+      { "src": "/gallery-2.jpg" },
+      { "src": "/gallery-1.jpg" },
+      { "src": "/gallery-4.jpg" },
+      { "src": "/gallery-5.jpg" },
+      { "src": "/gallery-3.jpg" }
+    ],
+    "venue": "Artisan Hub"
+  },
+  {
+    "images": [
+      { "src": "/gallery-3.jpg" },
+      { "src": "/gallery-5.jpg" },
+      { "src": "/gallery-1.jpg" },
+      { "src": "/gallery-4.jpg" },
+      { "src": "/gallery-2.jpg" }
+    ],
+    "venue": "Inspire Gallery"
+  },
+  {
+    "images": [
+      { "src": "/gallery-4.jpg" },
+      { "src": "/gallery-2.jpg" },
+      { "src": "/gallery-3.jpg" },
+      { "src": "/gallery-5.jpg" },
+      { "src": "/gallery-1.jpg" }
+    ],
+    "venue": "Cultural Canvas"
+  },
+  {
+    "images": [
+      { "src": "/gallery-5.jpg" },
+      { "src": "/gallery-1.jpg" },
+      { "src": "/gallery-3.jpg" },
+      { "src": "/gallery-4.jpg" },
+      { "src": "/gallery-2.jpg" }
+    ],
+    "venue": "Creative Corners"
+  },
+  {
+    "images": [
+      { "src": "/gallery-1.jpg" },
+      { "src": "/gallery-5.jpg" },
+      { "src": "/gallery-4.jpg" },
+      { "src": "/gallery-3.jpg" },
+      { "src": "/gallery-2.jpg" }
+    ],
+    "venue": "Modernist Space"
+  },
+  {
+    "images": [
+      { "src": "/gallery-2.jpg" },
+      { "src": "/gallery-5.jpg" },
+      { "src": "/gallery-3.jpg" },
+      { "src": "/gallery-1.jpg" },
+      { "src": "/gallery-4.jpg" }
+    ],
+    "venue": "Urban Arts Studio"
+  },
+  {
+    "images": [
+      { "src": "/gallery-3.jpg" },
+      { "src": "/gallery-4.jpg" },
+      { "src": "/gallery-5.jpg" },
+      { "src": "/gallery-1.jpg" },
+      { "src": "/gallery-2.jpg" }
+    ],
+    "venue": "Creative Corners"
+  },
+  {
+    "images": [
+      { "src": "/gallery-4.jpg" },
+      { "src": "/gallery-2.jpg" },
+      { "src": "/gallery-1.jpg" },
+      { "src": "/gallery-5.jpg" },
+      { "src": "/gallery-3.jpg" }
+    ],
+    "venue": "Cultural Canvas"
+  }
+]
