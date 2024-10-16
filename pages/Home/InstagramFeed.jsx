@@ -71,8 +71,8 @@ const feedData = ["/feed-1.jpg", "/feed-2.jpg", "/feed-3.jpg", "/feed-4.jpg"];
 
 const InstagramFeed = () => {
   return (
-    <div className="flex flex-col items-center text-center mt-40 mb-10 gap-12">
-      <h2 className="uppercase text-[52px] !leading-[1.1em] font-italiana font-semibold">
+    <div className="flex flex-col items-center text-center mt-24 sm:mt-32 lg:mt-40 mb-10 gap-9 sm:gap-12">
+      <h2 className="uppercase text-[40px] sm:text-[46px] lg:text-[52px] !leading-[1.1em] font-italiana font-semibold">
         FOLLOW ALONG
       </h2>
 
@@ -80,7 +80,7 @@ const InstagramFeed = () => {
         @chic.flowers
       </h3>
 
-      <div className="flex h-[550px] gap-3 w-full">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 w-full">
         {feedData.map((post, i) => (
           <div key={i} className="w-full h-full">
             <img src={post} className="w-full h-full object-cover" />

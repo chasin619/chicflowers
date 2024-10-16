@@ -4,18 +4,15 @@ import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
 
 const Hero = () => {
-  const wrapper = useRef();
+  const background = useRef();
 
   const btn1 = useRef();
   const btn2 = useRef();
 
   useEffect(() => {
     const tl = gsap.timeline({ delay: 0.2 });
-    tl.to(wrapper.current, {
-      backgroundSize: "100%",
-      ease: "circ.out",
-      duration: 0.6,
-    });
+
+    tl.to(background.current, { scale: 1, ease: "circ.out", duration: 0.6 });
     tl.fromTo(
       [btn1.current, btn2.current],
       { opacity: 0, y: 40 },
@@ -31,18 +28,20 @@ const Hero = () => {
   }, []);
 
   return (
-    <div
-      ref={wrapper}
-      style={{
-        backgroundImage:
-          "linear-gradient(#00000080, #00000080), url(/hero.jpg)",
-        backgroundSize: "115%",
-        backgroundPosition: "50% 6%",
-      }}
-      className="w-full h-[100dvh] bg-no-repeat bg-cover bg-top flex flex-col items-center relative"
-    >
-      <div className="brand-name-wrapper first mt-16 aspect-[304/120] h-[160px] z-30">
-        <h1 className="text-white text-[160px] text-center leading-none font-italiana font-bold tracking-widest brand-name">
+    <div className="w-full h-[100dvh] flex flex-col items-center relative overflow-hidden">
+      <div
+        ref={background}
+        style={{
+          backgroundImage:
+            "linear-gradient(#00000080, #00000080), url(/hero.jpg)",
+          backgroundPosition: "50% 6%",
+          scale: 1.15,
+        }}
+        className="bg-no-repeat bg-cover absolute inset-0 origin-top"
+      />
+
+      <div className="brand-name-wrapper first mt-[20vh] xs:mt-[17vh] sm:mt-24 lg:mt-16 aspect-[304/120] text-[80px] xs:text-[100px] sm:text-[120px] lg:text-[160px] h-[1em] z-30">
+        <h1 className="text-white text-center text-[80px] xs:text-[100px] sm:text-[120px] lg:text-[160px] leading-none font-italiana font-bold tracking-widest brand-name">
           CHIC
         </h1>
       </div>

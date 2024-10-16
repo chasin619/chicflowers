@@ -33,7 +33,10 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div id="portfolio" className="grid grid-cols-3 p-[3.333vw] gap-[3.333vw]">
+    <div
+      id="portfolio"
+      className="grid xs:grid-cols-2 md:grid-cols-3 p-[3.333vw] gap-[3.333vw]"
+    >
       {portfolioData.map((item, i) => (
         <Link
           key={i}
