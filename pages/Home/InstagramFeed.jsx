@@ -82,7 +82,7 @@ const InstagramFeed = () => {
 
       <div className="flex h-[550px] gap-3 w-full">
         {feedData.map((post, i) => (
-          <div className="w-full h-full">
+          <div key={i} className="w-full h-full">
             <img src={post} className="w-full h-full object-cover" />
           </div>
         ))}
