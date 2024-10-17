@@ -9,7 +9,7 @@ const EventShowcase = () => {
           className="font-qwitcher text-[2.5em] leading-[0.4em] translate-y-[0.05em] inline-block"
           style={{ textTransform: "none" }}
         >
-          Miami
+          San Diego and LA
         </span>
       </h2>
 
