@@ -43,12 +43,17 @@
   {
     "images": [
       { "src": "https://chicflowers.s3.amazonaws.com/Greystone+Mansion%2C+Beverly+Hills%2C+CA+/Greystone-Mansion%2C-Beverly-Hills%2C-CA-6.jpg" },
-      { "src": "/gallery-1.jpg" },
-      { "src": "/gallery-4.jpg" },
-      { "src": "/gallery-5.jpg" },
-      { "src": "/gallery-3.jpg" }
+      { "src": "https://chicflowers.s3.amazonaws.com/Greystone+Mansion%2C+Beverly+Hills%2C+CA+/Greystone-Mansion%2C-Beverly-Hills%2C-CA-1.jpg" },
+      { "src": "https://chicflowers.s3.amazonaws.com/Greystone+Mansion%2C+Beverly+Hills%2C+CA+/Greystone-Mansion%2C-Beverly-Hills%2C-CA-2.jpg" },
+      { "src": "https://chicflowers.s3.amazonaws.com/Greystone+Mansion%2C+Beverly+Hills%2C+CA+/Greystone-Mansion%2C-Beverly-Hills%2C-CA-3.jpg" },
+      { "src": "https://chicflowers.s3.amazonaws.com/Greystone+Mansion%2C+Beverly+Hills%2C+CA+/Greystone-Mansion%2C-Beverly-Hills%2C-CA-4.jpg" },
+      { "src": "https://chicflowers.s3.amazonaws.com/Greystone+Mansion%2C+Beverly+Hills%2C+CA+/Greystone-Mansion%2C-Beverly-Hills%2C-CA-5.jpg" },
+      { "src": "https://chicflowers.s3.amazonaws.com/Greystone+Mansion%2C+Beverly+Hills%2C+CA+/Greystone-Mansion%2C-Beverly-Hills%2C-CA-7.jpg" },
+      { "src": "https://chicflowers.s3.amazonaws.com/Greystone+Mansion%2C+Beverly+Hills%2C+CA+/Greystone-Mansion%2C-Beverly-Hills%2C-CA-8.jpg" }
+     
+     
     ],
-    "venue": "Artisan Hub"
+    "venue": "Greystone Mansion, Beverly Hills, CA "
   },
   {
     "images": [
