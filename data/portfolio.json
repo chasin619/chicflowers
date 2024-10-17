@@ -108,13 +108,12 @@
   },
   {
     "images": [
-      { "src": "/gallery-1.jpg" },
-      { "src": "/gallery-5.jpg" },
-      { "src": "/gallery-4.jpg" },
-      { "src": "/gallery-3.jpg" },
-      { "src": "/gallery-2.jpg" }
+      { "src": "https://chicflowers.s3.amazonaws.com/Private+Residence%2C+Rancho+Santa+Fe+/Private-Residence%2C-Rancho-Santa-Fe-3.jpg" },
+      { "src": "https://chicflowers.s3.amazonaws.com/Private+Residence%2C+Rancho+Santa+Fe+/Private-Residence%2C-Rancho-Santa-Fe-1.jpg" },
+      { "src": "https://chicflowers.s3.amazonaws.com/Private+Residence%2C+Rancho+Santa+Fe+/Private-Residence%2C-Rancho-Santa-Fe-2.jpg" }
+    
     ],
-    "venue": "Modernist Space"
+    "venue": "Private Residence, Rancho Santa Fe "
   },
   {
     "images": [
