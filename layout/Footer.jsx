@@ -24,8 +24,8 @@ const Footer = () => {
       <div className="w-full">
         <div className="border-y border-black flex flex-col-reverse sm:flex-row sm:items-center justify-between px-4 lg:px-6">
           <p className="uppercase text-lg sm:text-xl lg:text-[22px] font-medium !leading-[1.2] mb-[0.5em] sm:mb-0">
-            336 W 37th St Suite 1200 <br />
-            New York, NY 10018
+            777 5th ave <br />
+            San Diego, CA 92101
           </p>
 
           <h6 className="text-[52px] sm:text-[66px] lg:text-[85px] !leading-[1.1] translate-y-[0.02em] font-italiana font-bold tracking-widest -translate-x-[0.05em] sm:translate-x-0">
