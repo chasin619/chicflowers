@@ -1,75 +1,22 @@
-"use client";
-
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import React, { useEffect, useRef } from "react";
-
-// const feedData = [
-//   "https://www.instagram.com/p/DAZwlOAvx2C/embed",
-//   "https://www.instagram.com/p/C9SgqtkJ7_-/embed",
-//   "https://www.instagram.com/p/CzEhweyJAzE/embed",
-//   "https://www.instagram.com/p/DBHYbvsSLMn/embed",
-//   "https://www.instagram.com/p/DBE5HaUzkVB/embed",
-//   "https://www.instagram.com/p/DA7XiwWvB1j/embed",
-//   "https://www.instagram.com/p/DA35pmQSmRF/embed",
-//   "https://www.instagram.com/p/DA347yQSypI/embed",
-// ];
+import React from "react";
 
 const feedData = ["/feed-1.jpg", "/feed-2.jpg", "/feed-3.jpg", "/feed-4.jpg"];
 
-// const InstagramFeed = () => {
-//   const wrapper = useRef();
-//   const slider = useRef();
+const getFeed = async () => {
+  if (!process.env.INSTAGRAM_KEY) return;
 
-//   useGSAP(
-//     () => {
-//       gsap.to(slider.current, {
-//         x: () => {
-//           const sliderWidth = slider.current.getBoundingClientRect().width;
-//           return -(sliderWidth - window.innerWidth * 0.9);
-//         },
-//         ease: "none",
-//         scrollTrigger: {
-//           trigger: wrapper.current,
-//           start: "top top",
-//           end: () => `+=${window.innerHeight * feedData.length * 0.4}`,
-//           pin: wrapper.current,
-//           scrub: true,
-//         },
-//       });
-//     },
-//     { revertOnUpdate: true, dependencies: [] }
-//   );
+  const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=${process.env.INSTAGRAM_KEY}`;
 
-//   return (
-//     <div ref={wrapper} className="h-screen pt-[72px] overflow-x-clip px-[5vw]">
-//       <div ref={slider} className="flex w-max h-full items-center gap-12">
-//         {feedData.map((post, i) => (
-//           <a
-//             href={post.slice(0, post.indexOf("/embed"))}
-//             target="_blank"
-//             key={i}
-//             style={{
-//               backgroundColor: `rgb(${i * 15 + 100}, ${i * 15}, ${i * 15})`,
-//             }}
-//             className="shrink-0 aspect-[400/560] h-[70%] border rounded-lg overflow-hidden cursor-pointer"
-//           >
-//             <iframe
-//               src={post}
-//               width="400"
-//               height="560"
-//               scrolling="no"
-//               loading="lazy"
-//               className="w-full h-full pointer-events-none"
-//             ></iframe>
-//           </a>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
+  const data = await fetch(url);
 
-const InstagramFeed = () => {
+  const feed = await data.json();
+
+  return feed;
+};
+
+const InstagramFeed = async () => {
+  const feed = await getFeed();
+
   return (
     <div className="flex flex-col items-center text-center mt-24 sm:mt-32 lg:mt-40 mb-10 gap-9 sm:gap-12">
       <h2 className="uppercase text-[40px] sm:text-[46px] lg:text-[52px] !leading-[1.1em] font-italiana font-semibold">
@@ -81,11 +28,22 @@ const InstagramFeed = () => {
       </h3>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 w-full">
-        {feedData.map((post, i) => (
-          <div key={i} className="w-full h-full">
-            <img src={post} className="w-full h-full object-cover" />
-          </div>
-        ))}
+        {feed?.data
+          .filter((post) => post.media_type === "IMAGE")
+          .slice(0, 4)
+          .map((post, i) => (
+            <a
+              key={i}
+              target="_blank"
+              href={post.permalink}
+              className="w-full h-full"
+            >
+              <img
+                src={post.media_url}
+                className="w-full h-full object-cover"
+              />
+            </a>
+          ))}
       </div>
     </div>
   );
