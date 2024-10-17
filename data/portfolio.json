@@ -117,13 +117,15 @@
   },
   {
     "images": [
-      { "src": "/gallery-2.jpg" },
-      { "src": "/gallery-5.jpg" },
-      { "src": "/gallery-3.jpg" },
-      { "src": "/gallery-1.jpg" },
-      { "src": "/gallery-4.jpg" }
+      { "src": "https://chicflowers.s3.amazonaws.com/Marriott+Resort%2C+Coronado%2C+CA/Marriott-Resort%2C-Coronado%2C-CA3.jpg" },
+      { "src": "https://chicflowers.s3.amazonaws.com/Marriott+Resort%2C+Coronado%2C+CA/Marriott-Resort%2C-Coronado%2C-CA1.jpg" },
+      { "src": "https://chicflowers.s3.amazonaws.com/Marriott+Resort%2C+Coronado%2C+CA/Marriott-Resort%2C-Coronado%2C-CA2.jpg" },
+      { "src": "https://chicflowers.s3.amazonaws.com/Marriott+Resort%2C+Coronado%2C+CA/Marriott-Resort%2C-Coronado%2C-CA4.jpg" },
+      { "src": "https://chicflowers.s3.amazonaws.com/Marriott+Resort%2C+Coronado%2C+CA/Marriott-Resort%2C-Coronado%2C-CA5.jpg" },
+      { "src": "https://chicflowers.s3.amazonaws.com/Marriott+Resort%2C+Coronado%2C+CA/Marriott-Resort%2C-Coronado%2C-CA6.jpg" }
+      
     ],
-    "venue": "Urban Arts Studio"
+    "venue": "Marriott Resort, Coronado, CA"
   },
   {
     "images": [
