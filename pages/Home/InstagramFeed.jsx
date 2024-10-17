@@ -1,21 +1,23 @@
-import React from "react";
+"use client";
 
-const feedData = ["/feed-1.jpg", "/feed-2.jpg", "/feed-3.jpg", "/feed-4.jpg"];
+import React, { useEffect, useState } from "react";
 
-const getFeed = async () => {
-  if (!process.env.INSTAGRAM_KEY) return;
+const InstagramFeed = () => {
+  const [feed, setFeed] = useState([]);
 
-  const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=${process.env.INSTAGRAM_KEY}`;
+  useEffect(() => {
+    const getFeed = async () => {
+      const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=${process.env.NEXT_PUBLIC_INSTAGRAM_KEY}`;
 
-  const data = await fetch(url);
+      const data = await fetch(url);
 
-  const feed = await data.json();
+      const feed = await data.json();
 
-  return feed;
-};
+      setFeed(feed.data);
+    };
 
-const InstagramFeed = async () => {
-  const feed = await getFeed();
+    getFeed();
+  }, []);
 
   return (
     <div className="flex flex-col items-center text-center mt-24 sm:mt-32 lg:mt-40 mb-10 gap-9 sm:gap-12">
@@ -28,7 +30,7 @@ const InstagramFeed = async () => {
       </h3>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 w-full">
-        {feed?.data
+        {feed
           .filter((post) => post.media_type === "IMAGE")
           .slice(0, 4)
           .map((post, i) => (
