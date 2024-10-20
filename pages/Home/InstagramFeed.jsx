@@ -3,17 +3,22 @@
 import React, { useEffect, useState } from "react";
 
 const InstagramFeed = () => {
-  const [feed, setFeed] = useState([]);
+  const [feed, setFeed] = useState<any[]>([]);
 
   useEffect(() => {
     const getFeed = async () => {
       const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=${process.env.NEXT_PUBLIC_INSTAGRAM_KEY}`;
 
-      const data = await fetch(url);
+      try {
+        const data = await fetch(url);
+        const feedData = await data.json();
 
-      const feed = await data.json();
-
-      setFeed(feed.data);
+        if (feedData && feedData.data) {
+          setFeed(feedData.data);
+        }
+      } catch (error) {
+        console.error("Error fetching Instagram feed:", error);
+      }
     };
 
     getFeed();
@@ -30,22 +35,24 @@ const InstagramFeed = () => {
       </h3>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 w-full">
-        {feed
-          .filter((post) => post.media_type === "IMAGE")
-          .slice(0, 4)
-          .map((post, i) => (
-            <a
-              key={i}
-              target="_blank"
-              href={post.permalink}
-              className="w-full h-full"
-            >
-              <img
-                src={post.media_url}
-                className="w-full h-full object-cover"
-              />
-            </a>
-          ))}
+        {feed?.length > 0 &&
+          feed
+            .filter((post) => post.media_type === "IMAGE")
+            .slice(0, 4)
+            .map((post, i) => (
+              <a
+                key={i}
+                target="_blank"
+                href={post.permalink}
+                className="w-full h-full"
+              >
+                <img
+                  src={post.media_url}
+                  className="w-full h-full object-cover"
+                  alt={post.caption}
+                />
+              </a>
+            ))}
       </div>
     </div>
   );
