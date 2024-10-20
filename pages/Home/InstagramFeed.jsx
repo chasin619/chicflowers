@@ -4,25 +4,45 @@ import React, { useEffect, useState } from "react";
 
 const InstagramFeed = () => {
   const [feed, setFeed] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const getFeed = async () => {
       const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=${process.env.NEXT_PUBLIC_INSTAGRAM_KEY}`;
 
       try {
-        const data = await fetch(url);
-        const feedData = await data.json();
+        const response = await fetch(url);
+
+        if (!response.ok) {
+          throw new Error(`Error: ${response.statusText}`);
+        }
+
+        const feedData = await response.json();
+        console.log('API Response:', feedData);
 
         if (feedData && feedData.data) {
           setFeed(feedData.data);
+        } else {
+          setError("No data received from Instagram");
         }
-      } catch (error) {
-        console.error("Error fetching Instagram feed:", error);
+      } catch (err) {
+        setError(`Failed to fetch Instagram feed: ${err.message}`);
+      } finally {
+        setLoading(false);
       }
     };
 
     getFeed();
   }, []);
+
+  if (loading) {
+    return <div>Loading Instagram Feed...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   return (
     <div className="flex flex-col items-center text-center mt-24 sm:mt-32 lg:mt-40 mb-10 gap-9 sm:gap-12">
@@ -35,7 +55,7 @@ const InstagramFeed = () => {
       </h3>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 w-full">
-        {feed?.length > 0 &&
+        {feed?.length > 0 ? (
           feed
             .filter((post) => post.media_type === "IMAGE")
             .slice(0, 4)
@@ -53,7 +73,10 @@ const InstagramFeed = () => {
                   alt={post.caption || "Instagram image"}
                 />
               </a>
-            ))}
+            ))
+        ) : (
+          <p>No images found.</p>
+        )}
       </div>
     </div>
   );
