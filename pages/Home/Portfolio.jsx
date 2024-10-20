@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { motion, useSpring } from "framer-motion";
-import portfolioData from "@/data/portfolio";
+import { portfolioData } from "@/data/home";
 import Link from "next/link";
 
 const CURSOR_SIZE = 150;

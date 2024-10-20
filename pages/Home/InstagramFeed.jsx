@@ -19,7 +19,7 @@ const InstagramFeed = () => {
         }
 
         const feedData = await response.json();
-        console.log('API Response:', feedData);
+        console.log("API Response:", feedData);
 
         if (feedData && feedData.data) {
           setFeed(feedData.data);

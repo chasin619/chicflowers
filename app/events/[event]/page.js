@@ -2,7 +2,7 @@
 
 import { useParams } from "next/navigation";
 import React from "react";
-import portfolioData from "@/data/portfolio";
+import { portfolioData } from "@/data/home";
 
 const Event = () => {
   const params = useParams();
