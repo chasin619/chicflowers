@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 
 const InstagramFeed = () => {
-  const [feed, setFeed] = useState<any[]>([]);
+  const [feed, setFeed] = useState([]);
 
   useEffect(() => {
     const getFeed = async () => {
@@ -43,13 +43,14 @@ const InstagramFeed = () => {
               <a
                 key={i}
                 target="_blank"
+                rel="noopener noreferrer"
                 href={post.permalink}
                 className="w-full h-full"
               >
                 <img
                   src={post.media_url}
                   className="w-full h-full object-cover"
-                  alt={post.caption}
+                  alt={post.caption || "Instagram image"}
                 />
               </a>
             ))}
