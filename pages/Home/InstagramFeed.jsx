@@ -13,6 +13,8 @@ const InstagramFeed = () => {
 
       const feed = await data.json();
 
+      console.log(feed);
+
       setFeed(feed.data);
     };
 
