@@ -62,7 +62,7 @@ const Reviews = () => {
     const dx = -(e.clientX - mouseDownAt.current);
 
     const newSliderProgress = clamp(
-      slideProgressAtMouseDown.current + dx / (reviews.length * 250)
+      slideProgressAtMouseDown.current + dx / (reviewsData.length * 250)
     );
 
     slideProgress.current = newSliderProgress;
