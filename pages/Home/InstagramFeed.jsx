@@ -13,8 +13,6 @@ const InstagramFeed = () => {
 
       const feed = await data.json();
 
-      console.log(feed);
-
       setFeed(feed.data);
     };
 
@@ -33,19 +31,35 @@ const InstagramFeed = () => {
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 w-full">
         {feed
-          .filter((post) => post.media_type === "IMAGE")
+          .filter((post) => post.media_url)
           .slice(0, 4)
           .map((post, i) => (
             <a
               key={i}
               target="_blank"
               href={post.permalink}
-              className="w-full h-full"
+              className="w-full h-full relative"
             >
-              <img
-                src={post.media_url}
-                className="w-full h-full object-cover"
-              />
+              {(post.media_type === "IMAGE" ||
+                post.media_type === "CAROUSEL_ALBUM") && (
+                <img
+                  src={post.media_url}
+                  className="w-full h-full object-cover"
+                />
+              )}
+
+              {post.media_type === "VIDEO" && (
+                <>
+                  <video
+                    src={post.media_url}
+                    className="w-full h-full object-cover"
+                  />
+
+                  <div class="bg-black size-12 rounded-full flex justify-center items-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <div class="w-0 h-0 border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent border-l-[20px] border-l-white translate-x-[3px]"></div>
+                  </div>
+                </>
+              )}
             </a>
           ))}
       </div>
