@@ -28,9 +28,22 @@ const Navbar: React.FC<NavbarTypes> = ({ onMenuClose }) => {
       </div>
 
       <ul className="flex flex-col items-center justify-center gap-6 flex-1">
-        <li className="text-4xl cursor-pointer hover:italic">About</li>
-        <li className="text-4xl cursor-pointer hover:italic">Capabilities</li>
-        <li className="text-4xl cursor-pointer hover:italic">Contact Us</li>
+        <Link href="/">
+          <li className="text-4xl cursor-pointer hover:italic">About</li>
+        </Link>
+        <Link
+          href="/capabilities"
+          onClick={() => {
+            setTimeout(() => {
+              onMenuClose();
+            }, 500);
+          }}
+        >
+          <li className="text-4xl cursor-pointer hover:italic">Capabilities</li>
+        </Link>
+        <Link href="/">
+          <li className="text-4xl cursor-pointer hover:italic">Contact Us</li>
+        </Link>
       </ul>
       <div className="flex text-xl sm:text-2xl gap-5">
         <a href="#" target="_blank">
@@ -47,7 +60,7 @@ const Navbar: React.FC<NavbarTypes> = ({ onMenuClose }) => {
           />
         </a>
 
-        <a onClick={() => setShowMenu(false)}>
+        <a>
           <FontAwesomeIcon
             icon={faTiktok}
             className="h-[1em] text-black hover:text-[#18799B] transition-colors duration-200"

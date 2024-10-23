@@ -62,7 +62,7 @@ const Header = () => {
   return (
     <div
       ref={wrapper}
-      className={`fixed top-0 left-0 z-20 w-full flex justify-end p-3 sm:p-4 transition-colors duration-[400ms] ${
+      className={`fixed top-0 left-0 z-50 w-full flex justify-end p-3 sm:p-4 transition-colors duration-[400ms] ${
         isScrolled || !isHome ? "bg-black" : "bg-transparent"
       }`}
     >
