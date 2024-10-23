@@ -1,12 +1,11 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import Lenis from "lenis";
 import { usePathname } from "next/navigation";
-import gsap from "gsap";
 import useUpdateEffect from "@/hooks/useUpdateEffect";
 import { Flip } from "gsap/all";
 import Link from "next/link";
+import { Navbar } from "@/components/navbar";
 
 const Header = () => {
   const wrapper = useRef();
@@ -15,6 +14,7 @@ const Header = () => {
   const isHome = pathname === "/";
 
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,6 +55,10 @@ const Header = () => {
     });
   }, [isScrolled]);
 
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
+
   return (
     <div
       ref={wrapper}
@@ -72,16 +76,23 @@ const Header = () => {
           </Link>
         )}
       </div>
-
       <button
         className={`uppercase font-bold border-2 rounded-[4px] h-10 px-4 sm:px-5 text-[14px] sm:text-[15px] transition-all duration-200 ${
           false
             ? "text-black hover:text-white border-black hover:bg-black"
             : "text-white hover:text-black border-white hover:bg-white"
         }`}
+        onClick={() => setShowMenu(true)}
       >
         MENU
       </button>
+      <div
+        className={`fixed top-0 right-0 w-full h-full transition-opacity duration-500 bg-white ${
+          showMenu ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
+        {showMenu && <Navbar onMenuClose={closeMenu} />}
+      </div>
     </div>
   );
 };
