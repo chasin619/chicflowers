@@ -30,8 +30,7 @@ const InstagramFeed = () => {
       </h3>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 w-full">
-        {feed
-          .filter((post) => post.media_url)
+        {feed?.filter((post) => post.media_url)
           .slice(0, 4)
           .map((post, i) => (
             <a
