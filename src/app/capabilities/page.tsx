@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import React from "react";
 import { Accordion } from "@/components/accordion";
 import AboutSection from "@/ui/Capabilities/AboutSection";
@@ -18,12 +19,11 @@ const HeroSection = dynamic(() => import("@/ui/Capabilities/heroSection"), {
 });
 
 const Capabilities = () => {
-  console.log(isMobile)
   return (
     <>
       {isMobile ? <HeroSectionMobile /> : <HeroSection />}
       <RecordSection />
-      <div className="bg-purple flex justify-center items-center flex-col xl:px-60 lg:px-20 mobile:px-4 py-20 overflow-hidden">
+      <div className="bg-purple flex justify-center items-center flex-col xl:px-40 lg:px-20 mobile:px-4 py-20 overflow-hidden">
         <h1 className="font-[OreloBold] lg:text-6xl mobile:text-4xl text-black text-center">
           The Birch Treatment
         </h1>

@@ -16,6 +16,7 @@ const Navbar: React.FC<NavbarTypes> = ({ onMenuClose }) => {
     <div className="bg-white absolute w-full h-screen top-0 right-0 flex justify-center items-center flex-col py-7">
       <Link
         href="/"
+        onClick={onMenuClose}
         className="text-black text-5xl font-italiana font-bold tracking-widest absolute top-7 left-0 w-full text-center"
       >
         CHIC
@@ -36,7 +37,7 @@ const Navbar: React.FC<NavbarTypes> = ({ onMenuClose }) => {
           onClick={() => {
             setTimeout(() => {
               onMenuClose();
-            }, 500);
+            }, 800);
           }}
         >
           <li className="text-4xl cursor-pointer hover:italic">Capabilities</li>
