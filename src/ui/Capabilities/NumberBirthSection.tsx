@@ -11,7 +11,7 @@ const NumberBirthSection = () => {
   return (
     <div className="bg-black w-full mt-32 rounded-3xl flex items-center lg:flex-col mobile:flex-col mobile:gap-8 lg:gap-2">
       <h3 className="xl:text-2xl lg:text-xl mobile:text-base text-white uppercase mt-10">
-        Birch by the Numbers
+      Chic by the Numbers
       </h3>
       <div className="flex justify-center items-center mobile:flex-col lg:flex-row md:flex-col ">
         {countingData.map((item, index) => (

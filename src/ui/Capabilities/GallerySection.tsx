@@ -70,7 +70,7 @@ const GallerySection = () => {
             WELL-CRAFTED DESIGN ACROSS THE GLOBE.
           </h1>
           <p className="mobile:text-lg lg:text-xl mb-6">
-            From weddings and mitzvahs to galas and brand launches, Birch brings
+            From weddings and mitzvahs to galas and brand launches, Chic brings
             well-crafted design to the globe, setting the trend for events
             worldwide.
           </p>

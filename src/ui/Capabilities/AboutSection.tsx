@@ -9,7 +9,7 @@ const AboutSection = () => {
           {`IF IT'S NOT PLAY, IT'S NOT WORKING`}
         </h1>
         <p className="lg:text-lg lg:w-[360px] xl:w-[500px] mobile:text-base">
-          {`For all the elegance, glamor, and vitality of a Birch event, we are
+          {`For all the elegance, glamor, and vitality of a Chic event, we are
             powered by the empathy and humility that brought us here. With
             substantive knowledge and an easygoing approach, we are ALL IN the
             moment we start your proposal.`}

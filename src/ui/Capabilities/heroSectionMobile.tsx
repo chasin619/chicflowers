@@ -45,7 +45,7 @@ const HeroSectionMobile = () => {
             className="font-[OreloBold] text-4xl text-white"
             style={{ x: leftTextX, opacity: fadeIn, y: -400 }}
           >
-            The Birch
+            The Chic
           </motion.h1>
           <motion.h1
             className="font-[OreloBold] text-4xl text-white"
@@ -109,7 +109,7 @@ const HeroSectionMobile = () => {
         style={{ opacity: paragraphOpacity, y: paragraphY }}
       >
         <motion.p className="text-black text-center font-[FaktNormal] text-xl w-full">
-          No matter what you want or when you want it, Birch is ALL IN. Over the
+          No matter what you want or when you want it, Chic is ALL IN. Over the
           years, we’ve become masters of making dreams into realities – and
           pulling off the magic in record time. Our team shares an ethos of
           over-delivering and exceeding expectations, always working fast but

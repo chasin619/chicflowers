@@ -31,7 +31,7 @@ const Accordion = () => {
     {
       title: "The Details",
       content:
-        "The finer things live in the details. The Birch treatment means no need is too small, and nothing is overlooked.",
+        "The finer things live in the details. The Chic treatment means no need is too small, and nothing is overlooked.",
       lists: [
         "Custom Linen",
         "TableWare",

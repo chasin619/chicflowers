@@ -19,7 +19,7 @@ export default function Home() {
   const flower2X = useTransform(scrollYProgress, [0, 1.8], [1000, 1800]);
   const flower2Fade = useTransform(scrollYProgress, [0, 1.5], [0.4, 1]);
 
-  const textRevealX = useTransform(scrollYProgress, [0, 1.2], [1100, 0]);
+  const textRevealX = useTransform(scrollYProgress, [0, 1.2], [800, 0]);
   const textRevealOpacity = useTransform(scrollYProgress, [1.4, 1.6], [0.9, 1]);
 
   // Adjusted transform for paragraph appearance
@@ -44,7 +44,7 @@ export default function Home() {
           className="font-[OreloBold] text-[70px] text-white"
           style={{ x: leftTextX, opacity: fadeIn, y: 450 }}
         >
-          The Birch
+          The Chic
         </motion.h1>
         <motion.h1
           className="font-[OreloBold] text-[70px] text-white"
@@ -107,7 +107,7 @@ export default function Home() {
         style={{ opacity: paragraphOpacity, y: paragraphY }}
       >
         <motion.p className="text-black text-center font-[FaktNormal] text-[30px] m-auto w-1/2 ">
-          No matter what you want or when you want it, Birch is ALL IN. Over the
+          No matter what you want or when you want it, Chic is ALL IN. Over the
           years, we’ve become masters of making dreams into realities – and
           pulling off the magic in record time. Our team shares an ethos of
           over-delivering and exceeding expectations, always working fast but

@@ -25,7 +25,7 @@ const Capabilities = () => {
       <RecordSection />
       <div className="bg-purple flex justify-center items-center flex-col xl:px-40 lg:px-20 mobile:px-4 py-20 overflow-hidden">
         <h1 className="font-[OreloBold] lg:text-6xl mobile:text-4xl text-black text-center">
-          The Birch Treatment
+          The Chic Treatment
         </h1>
         <p className="text-2xl mobile:text-lg font-medium text-center mt-10 uppercase">
           We design our services around your desires.
