@@ -3,7 +3,7 @@ import React from "react";
 
 const RecordSection = () => {
   return (
-    <div className="w-full lg:px-20 lg:py-28 mobile:px-4 mobile:py-20 xl:mt-[2000px] lg:mt-[2000px] md:mt-[2000px] mobile:mt-[00px]">
+    <div className="w-full lg:px-20 lg:py-28 mobile:px-4 mobile:py-20 xl:mt-[2000px] lg:mt-[2000px] md:mt-[2000px] mobile:mt-[500px]">
       <h1 className="lg:text-5xl mobile:text-3xl uppercase font-medium">
         In Record Time
       </h1>
