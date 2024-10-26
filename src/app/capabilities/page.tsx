@@ -8,6 +8,7 @@ import RecordSection from "@/ui/Capabilities/RecordSection";
 import GallerySection from "@/ui/Capabilities/GallerySection";
 import { isMobile } from "react-device-detect";
 import dynamic from "next/dynamic";
+import { CapabilityAccordionData } from "@/utils/constants";
 const HeroSectionMobile = dynamic(
   () => import("@/ui/Capabilities/heroSectionMobile"),
   {
@@ -34,7 +35,7 @@ const Capabilities = () => {
           Full in-house production and creative means your dream can be a
           reality with any timeline. See what we’re capable of.
         </p>
-        <Accordion />
+        <Accordion data={CapabilityAccordionData} />
         <NumberBirthSection />
         <AboutSection />
         <GallerySection />

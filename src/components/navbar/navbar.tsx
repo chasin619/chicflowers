@@ -29,7 +29,14 @@ const Navbar: React.FC<NavbarTypes> = ({ onMenuClose }) => {
       </div>
 
       <ul className="flex flex-col items-center justify-center gap-6 flex-1">
-        <Link href="/">
+        <Link
+          href="/about"
+          onClick={() => {
+            setTimeout(() => {
+              onMenuClose();
+            }, 800);
+          }}
+        >
           <li className="text-4xl cursor-pointer hover:italic">About</li>
         </Link>
         <Link
@@ -42,7 +49,14 @@ const Navbar: React.FC<NavbarTypes> = ({ onMenuClose }) => {
         >
           <li className="text-4xl cursor-pointer hover:italic">Capabilities</li>
         </Link>
-        <Link href="/">
+        <Link
+          href="/"
+          onClick={() => {
+            setTimeout(() => {
+              onMenuClose();
+            }, 800);
+          }}
+        >
           <li className="text-4xl cursor-pointer hover:italic">Contact Us</li>
         </Link>
       </ul>

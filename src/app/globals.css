@@ -26,3 +26,10 @@ body {
   z-index: 1;
   animation: rotate 50s linear infinite;
 }
+
+.AccordionPlusIcon {
+	transition: all 0.2s ease-in-out;
+}
+.AccordionTrigger[data-state="open"] > .AccordionPlusIcon {
+	transform: rotate(45deg);
+}
