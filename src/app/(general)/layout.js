@@ -1,8 +1,8 @@
 import Header from "@/layout/Header";
 import Footer from "@/layout/Footer";
-import "./globals.css";
+import "../globals.css";
 
-import Setup from "./Setup";
+import Setup from "../Setup";
 
 export const metadata = {
   title: "CHIC",

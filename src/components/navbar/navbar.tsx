@@ -50,7 +50,7 @@ const Navbar: React.FC<NavbarTypes> = ({ onMenuClose }) => {
           <li className="text-4xl cursor-pointer hover:italic">Capabilities</li>
         </Link>
         <Link
-          href="/"
+          href="/contact"
           onClick={() => {
             setTimeout(() => {
               onMenuClose();
