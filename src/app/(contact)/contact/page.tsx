@@ -6,11 +6,13 @@ import { useMultistepForm } from "@/hooks/useMultistepForm";
 import Image from "next/image";
 import { LeftArrowSvg, RightArrowSvg } from "@/assets/svgs";
 import EventInfoForm from "@/ui/Contact/Form/EventInfoForm";
+import EventVisionForm from "@/ui/Contact/Form/EventVisionForm";
 
 const Contact = () => {
   const { steps, step, currentStepIndex, back, next } = useMultistepForm([
     <UserForm />,
     <EventInfoForm />,
+    <EventVisionForm />,
   ]);
 
   return (
