@@ -13,7 +13,7 @@ module.exports = {
     extend: {
       screens: {
         xs: "450px",
-        mobile: "350px",
+        mobile: "360px",
         ...defaultTheme.screens,
       },
 

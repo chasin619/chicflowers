@@ -4,6 +4,12 @@ export type AccordionItem = {
   lists?: string[];
 };
 
+export interface TeamMember {
+  name: string;
+  position: string;
+  image: string | null;
+}
+
 export const CapabilityAccordionData: AccordionItem[] = [
   {
     title: "The Look",
@@ -67,5 +73,23 @@ export const AboutAccordionData: AccordionItem[] = [
     title: "Innovative",
     content:
       "Embracing the spirit of innovation, we continuously seek new and creative ways to push boundaries and drive progress. We encourage experimentation and exploration, valuing fresh ideas and visionary thinking. Our commitment to innovation fuels our ability to evolve and meet the ever-changing needs of our customers, partners and the market.",
+  },
+];
+
+export const teamMembers: TeamMember[] = [
+  {
+    name: "Avi Stahler",
+    position: "Senior Event Designer",
+    image: "/member-1.jpg",
+  },
+  {
+    name: "Leigh Lloveras",
+    position: "Senior Event Designer",
+    image: "/member-2.jpg",
+  },
+  {
+    name: "Bridget Murphy",
+    position: "Event Designer",
+    image: "/member-3.jpg",
   },
 ];
