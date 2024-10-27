@@ -1,35 +1,45 @@
-import React, { FC } from "react";
+import React, { FC, ChangeEvent } from "react";
 
-type InputProps = {
-  label: string;
-  placeholder: string;
+interface InputProps {
+  label?: string;
   error?: string;
   required?: boolean;
-  onChange?: any;
-  value: string;
-};
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
+  value?: string;
+  name?: string;
+  placeholder: string;
+  props?: React.InputHTMLAttributes<HTMLInputElement>;
+}
 
 const Input: FC<InputProps> = ({
   label,
-  placeholder,
   error,
   required,
-  onChange,
+  placeholder,
   value,
+  name,
+  onChange,
+  ...props
 }) => {
   return (
-    <div className="relative">
-      <label
-        className={`font-bold mb-2 ${error ? "text-red-600" : "text-gray-700"}`}
-      >
-        {label} {required && "*"}
-      </label>
+    <div className="relative w-full">
+      {label && (
+        <label
+          className={`font-bold mb-2 ${
+            error ? "text-red-600" : "text-gray-700"
+          }`}
+        >
+          {label} {required && "*"}
+        </label>
+      )}
       <input
+        {...props}
         type="text"
+        name={name}
         value={value}
         placeholder={placeholder}
-        className={`w-full bg-transparent border-2 rounded-full px-4 py-3 mt-1 text-gray-900 focus:outline-none ${
-          error ? "border-red-600" : "border-gray-700 focus:border-gray-900"
+        className={`w-full bg-white border rounded-full px-4 py-3 mt-1 text-gray-900 focus:outline-none ${
+          error ? "border-red-600" : "focus:border-gray-900"
         }`}
         required={required}
         onChange={onChange}

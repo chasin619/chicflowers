@@ -58,6 +58,7 @@ const EventInfoForm = () => {
             <div key={index} className="relative">
               <Input
                 value={details[field.name as keyof typeof details]}
+                name={field.name}
                 label={field.label}
                 onChange={handleInputChange}
                 placeholder="Type something"

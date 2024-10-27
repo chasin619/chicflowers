@@ -15,7 +15,7 @@ const EventVisionForm = () => {
   return (
     <div className="w-full px-16">
       <form>
-        <h2 className="text-2xl md:text-3xl text-gray-900 my-2 font-semibold">
+        <h2 className="text-xl md:text-2xl text-gray-900 mb-3 font-semibold">
           Now for the fun stuff. Tell us all about your event vision, and spare
           no detail!
         </h2>
@@ -24,13 +24,13 @@ const EventVisionForm = () => {
             value={vision}
             onChange={handleVisionChange}
             placeholder="Type your Description Here *"
-            className="w-full bg-transparent border-2 border-gray-700 rounded-2xl px-4 py-3 text-gray-900 focus:outline-none focus:border-gray-900"
+            className="w-full bg-white border rounded-2xl px-4 py-3 text-gray-900 focus:outline-none focus:border-gray-900"
             required
             rows={8}
           />
         </div>
 
-        <h2 className="text-2xl md:text-3xl text-gray-900 mt-10 mb-2 font-semibold">
+        <h2 className="text-xl md:text-2xl text-gray-900 mb-3 font-semibold mt-10">
           Attach Visuals
         </h2>
         <div className="relative">
@@ -40,7 +40,7 @@ const EventVisionForm = () => {
             got it, we'd love to see it.
           </span>
           <label htmlFor="visuals">
-            <div className="w-full bg-transparent border-2 border-gray-700 border-dashed rounded-3xl h-64 px-4 py-3 mt-4 text-gray-900 focus:outline-none focus:border-gray-900 flex justify-center items-center flex-col gap-2">
+            <div className="w-full bg-white border border-dashed rounded-2xl h-52 px-4 py-3 mt-4 text-gray-900 focus:outline-none focus:border-gray-900 flex justify-center items-center flex-col gap-2">
               <span className="uppercase">Drop files here or</span>
               <input
                 type="file"

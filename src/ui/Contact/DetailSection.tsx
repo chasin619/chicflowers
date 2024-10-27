@@ -13,10 +13,11 @@ const DetailSection = () => {
 
       <div className="flex mt-8 flex-col">
         <div className="mb-8">
-          <p className="text-xl mb-2">718.853.8538</p>
-          <p className="text-xl mb-4">info@birchevents.com</p>
+          <p className="text-xl mb-2">619-919-2437</p>
+          <p className="text-xl mb-2">chicflowersonline@gmail.com</p>
+          <p className="text-xl mb-4">Event Inquiries</p>
           <p className="text-xl border-black border-y py-3">
-            336 W 37TH ST SUITE 1200 <br /> NEW YORK, NY 10018
+          777 5th ave <br /> San Diego, CA 92101
           </p>
         </div>
         <div className="space-x-6">

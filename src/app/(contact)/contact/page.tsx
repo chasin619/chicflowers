@@ -7,19 +7,21 @@ import Image from "next/image";
 import { LeftArrowSvg, RightArrowSvg } from "@/assets/svgs";
 import EventInfoForm from "@/ui/Contact/Form/EventInfoForm";
 import EventVisionForm from "@/ui/Contact/Form/EventVisionForm";
+import SocailizeForm from "@/ui/Contact/Form/SocailizeForm";
 
 const Contact = () => {
   const { steps, step, currentStepIndex, back, next } = useMultistepForm([
     <UserForm />,
     <EventInfoForm />,
     <EventVisionForm />,
+    <SocailizeForm />,
   ]);
 
   return (
     <div className="bg-[#f0f0f0] min-h-screen flex gap-20 px-4 py-6 pt-20 mt-10">
       <DetailSection />
       <div className="flex flex-col w-full">
-        {step}
+        <div className="min-h-[70vh]">{step}</div>
         <div className="flex items-center justify-center self-end px-16">
           <div className="flex items-center space-x-3 mt-10">
             <button

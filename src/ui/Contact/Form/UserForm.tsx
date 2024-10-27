@@ -37,19 +37,12 @@ const UserForm = () => {
           Spill the details...
         </h2>
 
-        <div className="relative">
-          <label className="text-gray-700 font-bold mb-2">
-            EVENT DATE OR TIMELINE *
-          </label>
-          <input
-            type="text"
-            placeholder="Type something"
-            className="w-full bg-transparent border-2 border-gray-700 rounded-full px-4 py-3 mt-1 text-gray-900 focus:outline-none focus:border-gray-900"
-            required
-          />
-        </div>
+        <Input
+          label="EVENT DATE OR TIMELINE"
+          placeholder="Type something"
+          required
+        />
 
-        {/* Event Type Buttons */}
         <Select
           value={selectedType}
           types={["WEDDING", "SOCIAL", "CORPORATE", "OTHER"]}
@@ -62,7 +55,7 @@ const UserForm = () => {
             <input
               type="text"
               placeholder="Type something"
-              className="w-full bg-transparent border-2 border-gray-700 rounded-full px-4 py-3 mt-1 text-gray-900 focus:outline-none focus:border-gray-900"
+              className="w-full bg-white border rounded-full px-4 py-3 mt-1 text-gray-900 focus:outline-none focus:border-gray-900"
             />
           </div>
         )}
