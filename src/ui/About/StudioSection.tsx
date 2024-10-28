@@ -9,10 +9,10 @@ const StudioSection = () => {
           Out, About & In Studio
         </h1>
         <p className="text-sm lg:text-base font-medium text-center lg:text-left mt-2 lg:w-[900px] mx-auto lg:mx-0">
-          Birch is beyond brick and mortar. Though we have desks in NYC, our
-          workspace is as roaming as we are. The Birch studio is a nomadic one,
+          Chic is beyond brick and mortar. Though we have desks in NYC, our
+          workspace is as roaming as we are. The Chic studio is a nomadic one,
           powered by hustle and heart, launching us from busy cities to serene
-          landscapes and everywhere in between. The Birch studio is never bound
+          landscapes and everywhere in between. The Chic studio is never bound
           by street names and numbers – only creativity and imagination.
         </p>
       </div>

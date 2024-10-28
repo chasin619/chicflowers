@@ -8,7 +8,7 @@ import React from "react";
 
 const DetailSection = () => {
   return (
-    <div className="text-black pl-8 flex flex-col justify-between h-[80vh] w-1/3">
+    <div className="text-black md:pl-8 md:px-0 mobile:px-8 flex flex-col justify-between h-[80vh] mobile:w-full md:w-1/3">
       <h2 className="text-6xl font-bold">LET'S PLAY</h2>
 
       <div className="flex mt-8 flex-col">

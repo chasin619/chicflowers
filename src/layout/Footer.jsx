@@ -4,11 +4,12 @@ import {
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen">
+    <div className="flex flex-col items-center min-h-[60vh]">
       <div className="flex-grow flex flex-col text-center justify-center items-center gap-1.5 px-6">
         <p className="font-medium">Ready to dream something different?</p>
 
@@ -37,7 +38,9 @@ const Footer = () => {
           <ul className="sm:text-lg font-medium leading-[1.3] sm:leading-[1.5em]">
             <li>619-919-2437</li>
             <li>chicflowersonline@gmail.com</li>
-            <li>Event Inquiries</li>
+            <Link href='/contact'>
+              <li>Event Inquiries</li>
+            </Link>
           </ul>
 
           <div className="flex text-xl sm:text-2xl gap-5">

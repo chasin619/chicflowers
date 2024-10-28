@@ -16,7 +16,7 @@ const UserForm = () => {
   ];
 
   return (
-    <div className="w-full px-16">
+    <div className="w-full mobile:px-8 lg:px-16">
       <h2 className="text-2xl md:text-3xl text-gray-900 mb-6 font-semibold">
         Let's get to know each other
       </h2>

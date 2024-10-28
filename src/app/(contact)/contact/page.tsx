@@ -18,7 +18,7 @@ const Contact = () => {
   ]);
 
   return (
-    <div className="bg-[#f0f0f0] min-h-screen flex gap-20 px-4 py-6 pt-20 mt-10">
+    <div className="bg-[#f0f0f0] min-h-screen flex gap-20 px-4 py-6 pt-20 mt-10 mobile:flex-col md:flex-row">
       <DetailSection />
       <div className="flex flex-col w-full">
         <div className="min-h-[70vh]">{step}</div>

@@ -27,7 +27,7 @@ const ContactPreferencesForm: FC = () => {
   };
 
   return (
-    <div className="w-full px-16">
+    <div className="w-full mobile:px-8 lg:px-16">
       <h2 className="text-xl md:text-2xl text-gray-900 mb-3 font-semibold">
         How should we get in touch? *
       </h2>

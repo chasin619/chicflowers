@@ -17,7 +17,7 @@ const About = () => {
           We are an empathic, wildly talented, and uniquely positioned design
           and production house. Backed by substantive knowledge and an easy
           approach, working with us unlocks a world of benefits at your
-          disposal. Explore below the characteristics that separate Birch from
+          disposal. Explore below the characteristics that separate Chic from
           the rest.
         </p>
         <Accordion data={AboutAccordionData} />
