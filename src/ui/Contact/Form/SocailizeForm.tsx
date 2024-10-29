@@ -1,29 +1,15 @@
 import { Input } from "@/components/input";
 import { Select } from "@/components/select";
-import React, { useState, FC } from "react";
+import React from "react";
 
-type SocialLinks = {
-  instagram: string;
-  tiktok: string;
-  whatsapp?: string;
-  other?: string;
-};
-
-const ContactPreferencesForm: FC = () => {
-  const [selectedType, setSelectedType] = useState<string | null>(null);
-  const [socialLinks, setSocialLinks] = useState<SocialLinks>({
-    instagram: "",
-    tiktok: "",
-  });
-  const [mediaConsent, setMediaConsent] = useState<string | null>(null);
-  const [referralSource, setReferralSource] = useState<string | null>("OTHER");
-
+const ContactPreferencesForm = ({ data, updateFields }) => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setSocialLinks((prevLinks) => ({
-      ...prevLinks,
-      [name]: value,
-    }));
+    updateFields("additionalInfo", { [name]: value });
+  };
+
+  const handleSelect = (name, type) => {
+    updateFields("additionalInfo", { [name]: type });
   };
 
   return (
@@ -34,37 +20,41 @@ const ContactPreferencesForm: FC = () => {
 
       <Select
         types={["EMAIL", "PHONE", "TEXT", "WHATSAPP"]}
-        value={selectedType}
-        onTypeSelect={setSelectedType}
+        value={data.contactType}
+        onTypeSelect={(type) => handleSelect("contactType", type)}
       />
-      {selectedType === "WHATSAPP" && (
-        <Input
-          value={socialLinks.whatsapp || ""}
-          label="WHATSAPP"
-          onChange={handleInputChange}
-          name="whatsapp"
-          placeholder="Enter your WhatsApp number"
-          required
-        />
-      )}
+      <div className="mt-6">
+        {data.contactType && (
+          <Input
+            value={data.contact}
+            label={data.contactType}
+            onChange={handleInputChange}
+            name={"contact"}
+            placeholder={`Enter your ${data.contactType} number`}
+            required
+          />
+        )}
+      </div>
 
       <h2 className="text-xl md:text-2xl text-gray-900 font-semibold mt-8">
         Let's Socialize
       </h2>
-      <p className="my-2">Feel free to share your socials so we can get to know you better.</p>
+      <p className="my-2">
+        Feel free to share your socials so we can get to know you better.
+      </p>
       <div className="flex space-x-4 mb-6">
         <Input
-          value={socialLinks.instagram}
+          value={data.instagramHandle}
           label="INSTAGRAM"
           onChange={handleInputChange}
-          name="instagram"
+          name="instagramHandle"
           placeholder="Enter your Instagram handle"
         />
         <Input
-          value={socialLinks.tiktok}
+          value={data.tiktokHandle}
           label="TIKTOK"
           onChange={handleInputChange}
-          name="tiktok"
+          name="tiktokHandle"
           placeholder="Enter your TikTok handle"
         />
       </div>
@@ -74,8 +64,8 @@ const ContactPreferencesForm: FC = () => {
       </h2>
       <Select
         types={["YES", "DECOR PHOTOS ONLY", "LET'S DISCUSS", "NO"]}
-        value={mediaConsent}
-        onTypeSelect={setMediaConsent}
+        value={data.sharePicture}
+        onTypeSelect={(type) => handleSelect("sharePicture", type)}
       />
 
       <h2 className="text-xl md:text-2xl text-gray-900 mb-3 font-semibold mt-8">
@@ -84,18 +74,9 @@ const ContactPreferencesForm: FC = () => {
       <div className="space-y-6">
         <Select
           types={["SOCIAL MEDIA", "MAGAZINE", "EVENT", "REFERRAL", "OTHER"]}
-          value={referralSource}
-          onTypeSelect={setReferralSource}
+          value={data.hearAbout}
+          onTypeSelect={(type) => handleSelect("hearAbout", type)}
         />
-        {referralSource === "OTHER" && (
-          <Input
-            value={socialLinks.other || ""}
-            label="TELL US MORE"
-            onChange={handleInputChange}
-            name="other"
-            placeholder="Type something"
-          />
-        )}
       </div>
     </div>
   );

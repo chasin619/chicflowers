@@ -2,6 +2,7 @@ import Header from "@/layout/Header";
 import "../globals.css";
 
 import Setup from "../Setup";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "CHIC",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
 
         <Header />
         {children}
+        <Toaster position="top-center" reverseOrder={false} />
       </body>
     </html>
   );

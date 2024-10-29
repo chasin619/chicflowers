@@ -2,18 +2,39 @@ import { Input } from "@/components/input";
 import { Select } from "@/components/select";
 import React, { useState } from "react";
 
-const UserForm = () => {
-  const [selectedType, setSelectedType] = useState<string | null>(null);
+const UserForm = ({ data, updateFields }) => {
+  const [selectedType, setSelectedType] = useState<string | null>(data.eventType || null);
 
   const FEILDS = [
-    { label: "FULL NAME", placeholder: "Type something", required: true },
     {
+      name: "fullName",
+      label: "FULL NAME",
+      placeholder: "Type something",
+      required: true,
+      value: data.fullName,
+    },
+    {
+      name: "location",
       label: "WHERE ARE YOU BASED?",
       placeholder: "Type something",
       required: true,
+      value: data.location,
     },
-    { label: "EMAIL", placeholder: "Type something", required: true },
+    {
+      name: "email",
+      label: "EMAIL",
+      placeholder: "Type something",
+      required: true,
+      value: data.email,
+    },
   ];
+
+  const handleSelect = (type) => {
+    if (type) {
+      setSelectedType(type);
+      updateFields("personalInfo", { eventType: type });
+    }
+  };
 
   return (
     <div className="w-full mobile:px-8 lg:px-16">
@@ -23,14 +44,21 @@ const UserForm = () => {
 
       <form className="space-y-8">
         <div className="space-y-8">
-          {FEILDS.map((field, index) => (
-            <Input
-              key={index}
-              label={field.label}
-              placeholder={field.placeholder}
-              required={field.required}
-            />
-          ))}
+          {FEILDS.map((field, index) => {
+            const { label, value, required, placeholder, name } = field;
+            return (
+              <Input
+                key={index}
+                label={label}
+                value={value}
+                placeholder={placeholder}
+                required={required}
+                onChange={(e) =>
+                  updateFields("personalInfo", { [name]: e.target.value })
+                }
+              />
+            );
+          })}
         </div>
 
         <h2 className="text-2xl md:text-3xl text-gray-900 mt-12 mb-6 font-semibold">
@@ -40,13 +68,18 @@ const UserForm = () => {
         <Input
           label="EVENT DATE OR TIMELINE"
           placeholder="Type something"
+          name="eventDate"
+          value={data.eventDate}
           required
+          onChange={(e) =>
+            updateFields("personalInfo", { eventDate: e.target.value })
+          }
         />
 
         <Select
           value={selectedType}
           types={["WEDDING", "SOCIAL", "CORPORATE", "OTHER"]}
-          onTypeSelect={setSelectedType}
+          onTypeSelect={handleSelect}
         />
 
         {selectedType === "OTHER" && (

@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 
-const EventVisionForm = () => {
-  const [vision, setVision] = useState<string>("");
-  const [files, setFiles] = useState<FileList | null>(null);
+const EventVisionForm = ({ data, updateFields }) => {
+  const [previewImages, setPreviewImages] = useState([]); // State to hold image previews
 
-  const handleVisionChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setVision(e.target.value);
+  const handleVisionChange = (e) => {
+    updateFields("media", { [e.target.name]: e.target.value });
   };
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFiles(e.target.files);
+  const handleFileChange = (e) => {
+    const files = Array.from(e.target.files);
+    const fileURLs = files.map((file) => URL.createObjectURL(file));
+    setPreviewImages(fileURLs);
+
+    updateFields("media", { visuals: files });
   };
 
   return (
@@ -21,7 +24,8 @@ const EventVisionForm = () => {
         </h2>
         <div className="relative">
           <textarea
-            value={vision}
+            name="description"
+            value={data.description}
             onChange={handleVisionChange}
             placeholder="Type your Description Here *"
             className="w-full bg-white border rounded-2xl px-4 py-3 text-gray-900 focus:outline-none focus:border-gray-900"
@@ -58,6 +62,16 @@ const EventVisionForm = () => {
               >
                 Select Files
               </button>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {previewImages.map((src, index) => (
+                  <img
+                    key={index}
+                    src={src}
+                    alt={`Preview ${index}`}
+                    className="w-20 h-20 object-cover rounded-lg"
+                  />
+                ))}
+              </div>
             </div>
           </label>
         </div>
