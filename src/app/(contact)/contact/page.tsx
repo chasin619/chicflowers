@@ -48,7 +48,6 @@ const Contact = () => {
     }));
   };
 
-  console.log(formData.additionalInfo);
   const { steps, step, currentStepIndex, back, next, isFirstStep, isLastStep } =
     useMultistepForm([
       <UserForm data={formData.personalInfo} updateFields={updateFields} />,
@@ -86,8 +85,18 @@ const Contact = () => {
     next();
   };
 
-  const submitForm = () => {
-    console.log(formData);
+  const submitEventInquires = async () => {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+    console.log(data);
+    toast.success(data.message);
   };
 
   return (
@@ -111,7 +120,7 @@ const Contact = () => {
             {isLastStep && validateFields(feilds) ? (
               <button
                 className="flex items-center justify-center px-5 py-2 rounded-3xl border text-black focus:outline-none hover:bg-gray-900 hover:text-white transition-colors duration-300"
-                onClick={submitForm}
+                onClick={submitEventInquires}
               >
                 Submit
               </button>
