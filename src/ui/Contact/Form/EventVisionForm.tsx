@@ -1,17 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
 const EventVisionForm = ({ data, updateFields }) => {
-  const [previewImages, setPreviewImages] = useState([]); // State to hold image previews
-
   const handleVisionChange = (e) => {
     updateFields("media", { [e.target.name]: e.target.value });
   };
 
   const handleFileChange = (e) => {
     const files = Array.from(e.target.files);
-    const fileURLs = files.map((file) => URL.createObjectURL(file));
-    setPreviewImages(fileURLs);
-
     updateFields("media", { visuals: files });
   };
 
@@ -63,14 +58,15 @@ const EventVisionForm = ({ data, updateFields }) => {
                 Select Files
               </button>
               <div className="mt-4 flex flex-wrap gap-2">
-                {previewImages.map((src, index) => (
-                  <img
-                    key={index}
-                    src={src}
-                    alt={`Preview ${index}`}
-                    className="w-20 h-20 object-cover rounded-lg"
-                  />
-                ))}
+                {data?.visuals &&
+                  data.visuals.map((src, index) => (
+                    <img
+                      key={index}
+                      src={URL.createObjectURL(src)}
+                      alt={`Preview ${index}`}
+                      className="w-20 h-20 object-cover rounded-lg"
+                    />
+                  ))}
               </div>
             </div>
           </label>

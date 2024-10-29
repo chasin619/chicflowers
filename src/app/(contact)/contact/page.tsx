@@ -28,8 +28,6 @@ const Contact = () => {
     media: { description: "", visuals: "" },
     additionalInfo: {
       contactType: "",
-      instagramHandle: "",
-      tiktokHandle: "",
       sharePicture: "",
       hearAbout: "",
       contact: "",
