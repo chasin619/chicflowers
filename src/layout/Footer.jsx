@@ -13,13 +13,15 @@ const Footer = () => {
       <div className="flex-grow flex flex-col text-center justify-center items-center gap-1.5 px-6">
         <p className="font-medium">Ready to dream something different?</p>
 
-        <div className="text-black flex flex-col items-center gap-2.5 hover:text-[#18799B] transition-colors duration-300 cursor-pointer">
-          <h2 className="text-[80px] xs:text-[100px] md:text-[120px] !leading-none font-italiana font-bold pb-[0.25em] border-b border-current tracking-widest">
-            CHIC
-          </h2>
+        <Link href="/contact">
+          <div className="text-black flex flex-col items-center gap-2.5 hover:text-[#18799B] transition-colors duration-300 cursor-pointer">
+            <h2 className="text-[80px] xs:text-[100px] md:text-[120px] !leading-none font-italiana font-bold pb-[0.25em] border-b border-current tracking-widest">
+              CHIC
+            </h2>
 
-          <span className="font-semibold">INQUIRE HERE</span>
-        </div>
+            <span className="font-semibold">INQUIRE HERE</span>
+          </div>
+        </Link>
       </div>
 
       <div className="w-full">
@@ -38,7 +40,7 @@ const Footer = () => {
           <ul className="sm:text-lg font-medium leading-[1.3] sm:leading-[1.5em]">
             <li>619-919-2437</li>
             <li>chicflowersonline@gmail.com</li>
-            <Link href='/contact'>
+            <Link href="/contact">
               <li>Event Inquiries</li>
             </Link>
           </ul>
