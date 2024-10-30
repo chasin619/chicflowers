@@ -3,9 +3,9 @@ import { Select } from "@/components/select";
 import React, { useState } from "react";
 
 const EventInfoForm = ({ data, updateFields }) => {
-  const [selectedType, setSelectedType] = useState<string | null>(
-    data.extraService
-  );
+  const [selectedType, setSelectedType] = useState<any>(data.extraService);
+
+  console.log(selectedType);
 
   const FIELDS = [
     {
@@ -53,7 +53,15 @@ const EventInfoForm = ({ data, updateFields }) => {
           "CATERER",
         ]}
         onTypeSelect={handleSelect}
+        multiple
       />
+      <div className="flex justify-center items-center flex-col gap-4 mt-10">
+        {selectedType?.map((field) => {
+          return (
+            <Input name={field} label={field} placeholder="Type something" />
+          );
+        })}
+      </div>
 
       <form className="space-y-8 mt-10">
         <div className="space-y-8">
