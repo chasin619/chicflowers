@@ -32,8 +32,12 @@ export async function POST(request: Request) {
       financialInfo.weddingInvestment
     }</p>
     <p><strong>Decor Investment:</strong> ${financialInfo.decorInvestment}</p>
-    <p><strong>Extra Services:</strong> ${financialInfo.extraService}</p>
-    
+    <p><strong>Extra Services:</strong> ${financialInfo.extraService
+      .map(
+        (service) =>
+          service.charAt(0).toUpperCase() + service.slice(1).toLowerCase()
+      )
+      .join(", ")}</p>     
     <h3>Media Information</h3>
     <p><strong>Description:</strong> ${media.description}</p>
     
@@ -59,6 +63,11 @@ export async function POST(request: Request) {
     }</p>
     <p><strong>Contact Details:</strong> ${additionalInfo.contact}</p>
   `,
+    attachments: [
+      {
+        path: media.visuals[0].content,
+      },
+    ],
   };
 
   try {

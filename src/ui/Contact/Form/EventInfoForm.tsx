@@ -5,8 +5,6 @@ import React, { useState } from "react";
 const EventInfoForm = ({ data, updateFields }) => {
   const [selectedType, setSelectedType] = useState<any>(data.extraService);
 
-  console.log(selectedType);
-
   const FIELDS = [
     {
       name: "guests",
@@ -56,7 +54,7 @@ const EventInfoForm = ({ data, updateFields }) => {
         multiple
       />
       <div className="flex justify-center items-center flex-col gap-4 mt-10">
-        {selectedType?.map((field) => {
+        {selectedType && selectedType?.map((field) => {
           return (
             <Input name={field} label={field} placeholder="Type something" />
           );
