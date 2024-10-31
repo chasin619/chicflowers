@@ -93,3 +93,18 @@ export const teamMembers: TeamMember[] = [
     image: "/member-3.jpg",
   },
 ];
+
+export const navRoutes = [
+  {
+    href: '/about',
+    name: 'About',
+  },
+  {
+    href: '/capabilities',
+    name: 'Capabilities',
+  },
+  {
+    href: '/contact',
+    name: 'Contact Us',
+  },
+]

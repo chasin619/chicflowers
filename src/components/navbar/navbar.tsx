@@ -1,11 +1,12 @@
+import React from "react";
+import Link from "next/link";
 import {
   faFacebookF,
   faInstagram,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
-import React from "react";
+import { navRoutes } from "@/utils/constants";
 
 interface NavbarTypes {
   onMenuClose: () => void;
@@ -13,11 +14,11 @@ interface NavbarTypes {
 
 const Navbar: React.FC<NavbarTypes> = ({ onMenuClose }) => {
   return (
-    <div className="bg-white absolute w-full h-screen top-0 right-0 flex justify-center items-center flex-col py-7">
+    <div className="bg-white absolute w-full h-screen top-0 right-0 flex justify-center items-center flex-col pt-9 pb-5">
       <Link
         href="/"
         onClick={onMenuClose}
-        className="text-black text-5xl font-italiana font-bold tracking-widest absolute top-7 left-0 w-full text-center"
+        className="text-black lg:text-5xl mobile:text-4xl font-italiana font-bold tracking-widest absolute top-7 left-0 w-full text-center"
       >
         CHIC
       </Link>
@@ -29,36 +30,24 @@ const Navbar: React.FC<NavbarTypes> = ({ onMenuClose }) => {
       </div>
 
       <ul className="flex flex-col items-center justify-center gap-6 flex-1">
-        <Link
-          href="/about"
-          onClick={() => {
-            setTimeout(() => {
-              onMenuClose();
-            }, 800);
-          }}
-        >
-          <li className="text-4xl cursor-pointer hover:italic">About</li>
-        </Link>
-        <Link
-          href="/capabilities"
-          onClick={() => {
-            setTimeout(() => {
-              onMenuClose();
-            }, 800);
-          }}
-        >
-          <li className="text-4xl cursor-pointer hover:italic">Capabilities</li>
-        </Link>
-        <Link
-          href="/contact"
-          onClick={() => {
-            setTimeout(() => {
-              onMenuClose();
-            }, 800);
-          }}
-        >
-          <li className="text-4xl cursor-pointer hover:italic">Contact Us</li>
-        </Link>
+        {navRoutes.map((route, index) => {
+          const { name, href } = route;
+          return (
+            <Link
+              key={index}
+              href={href}
+              onClick={() => {
+                setTimeout(() => {
+                  onMenuClose();
+                }, 800);
+              }}
+            >
+              <li className="lg:text-4xl mobile:text-3xl cursor-pointer hover:italic">
+                {name}
+              </li>
+            </Link>
+          );
+        })}
       </ul>
       <div className="flex text-xl sm:text-2xl gap-5">
         <a href="#" target="_blank">
