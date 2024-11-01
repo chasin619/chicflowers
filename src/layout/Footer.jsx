@@ -15,7 +15,7 @@ const Footer = () => {
 
         <Link href="/contact">
           <div className="text-black flex flex-col items-center gap-2.5 hover:text-[#18799B] transition-colors duration-300 cursor-pointer">
-            <h2 className="text-[65px] xs:text-[100px] md:text-[80px] !leading-none font-italiana font-bold pb-[0.25em] border-b border-current tracking-widest">
+            <h2 className="text-[65px] xs:text-[100px] md:text-[70px] !leading-none font-italiana font-bold pb-[0.25em] border-b border-current tracking-widest">
               CHIC
             </h2>
 
@@ -31,7 +31,7 @@ const Footer = () => {
             San Diego, CA 92101
           </p>
 
-          <h6 className="text-[46px] sm:text-[45px] lg:text-[60px] !leading-[1.1] translate-y-[0.02em] font-italiana font-bold tracking-widest -translate-x-[0.05em] sm:translate-x-0">
+          <h6 className="text-[46px] sm:text-[45px] lg:text-[55px] !leading-[1.1] translate-y-[0.02em] font-italiana font-bold tracking-widest -translate-x-[0.05em] sm:translate-x-0">
             CHIC
           </h6>
         </div>
