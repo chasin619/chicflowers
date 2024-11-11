@@ -36,7 +36,7 @@ export default function Home() {
         }}
         className="sticky top-0 left-0 w-full h-[150vh] overflow-hidden"
       >
-        <Image src="/wedding.webp" alt="Wedding" fill objectFit="cover" />
+        <Image src="/wedding.jpeg" alt="Wedding" fill objectFit="cover" />
       </motion.div>
 
       <div className="absolute inset-0 top-[-1000] flex flex-col justify-center items-center">

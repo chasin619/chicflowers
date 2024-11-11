@@ -2,6 +2,7 @@ export type AccordionItem = {
   title: string;
   content: string;
   lists?: string[];
+  images?: string[];
 };
 
 export interface TeamMember {
@@ -16,6 +17,7 @@ export const CapabilityAccordionData: AccordionItem[] = [
     content:
       "Zoom out and see the big picture of your event. Even if you can’t envision it yet, trust that we can—and we’ll execute it flawlessly.",
     lists: ["Event Design", "Design Consulting", "Floral Design"],
+    images: ["/look-accordion-1.jpg", "/look-accordion-2.jpg", "/look-accordion-3.jpg"]
   },
   {
     title: "The Feel",
@@ -26,8 +28,9 @@ export const CapabilityAccordionData: AccordionItem[] = [
       "Floor Plans",
       "Testing + Staging",
       "Custom Dance Floors",
-      "Custom-Built Furnishings",
+      "Custom-Built Furnishings", 
     ],
+    images: ["/feel-accordion-1.jpg", "/feel-accordion-2.jpg"]
   },
   {
     title: "The Details",
@@ -40,6 +43,7 @@ export const CapabilityAccordionData: AccordionItem[] = [
       "Favors + Accessories",
       "Bespoke Finishing Touches ",
     ],
+    images: ["/detail-accordion-1.jpeg","/studio-3.jpeg", "/studio-7.jpeg"]
   },
 ];
 

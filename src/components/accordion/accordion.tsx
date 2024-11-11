@@ -14,7 +14,7 @@ const Accordion = ({ data }: { data: AccordionItem[] }) => {
   return (
     <Root type="multiple" className="w-full">
       {data.map((item, index) => {
-        const { title, content, lists } = item;
+        const { title, content, lists, images } = item;
         return (
           <Item value={`item-${index + 1}`} key={index}>
             <Header>
@@ -24,7 +24,11 @@ const Accordion = ({ data }: { data: AccordionItem[] }) => {
                 } AccordionTrigger border-black w-full flex justify-between items-center lg:text-5xl mobile:text-3xl mobile:py-3 lg:py-6`}
               >
                 <span className="uppercase">{title}</span>
-                <Image src={PlusSvg} alt="Plus svg" className="AccordionPlusIcon"/>
+                <Image
+                  src={PlusSvg}
+                  alt="Plus svg"
+                  className="AccordionPlusIcon"
+                />
               </Trigger>
             </Header>
             <Content className="AccordionContent">
@@ -41,29 +45,17 @@ const Accordion = ({ data }: { data: AccordionItem[] }) => {
                     ))}
                 </ol>
               </div>
-              {lists && (
+              {images && (
                 <div className="flex justify-center items-center mobile:flex-col gap-6 mt-10 lg:flex-row">
-                  <Image
-                    src="/accordion-1.webp"
-                    alt="Accordion Image"
-                    width={200}
-                    height={200}
-                    className="w-80 rounded-md lg:w-[500px] md:w-[320px]"
-                  />
-                  <Image
-                    src="/accordion-2.webp"
-                    alt="Accordion Image"
-                    width={200}
-                    height={200}
-                    className="w-80 rounded-md lg:w-[500px] md:w-[320px]"
-                  />
-                  <Image
-                    src="/accordion-3.webp"
-                    alt="Accordion Image"
-                    width={200}
-                    height={200}
-                    className="w-80 rounded-md lg:w-[500px] md:w-[320px]"
-                  />
+                  {images.map((url) => (
+                    <Image
+                      src={url}
+                      alt="Accordion Image"
+                      width={200}
+                      height={200}
+                      className="w-80 rounded-md lg:w-[500px] md:max-w-[320px] max-h-80 object-cover"
+                    />
+                  ))}
                 </div>
               )}
             </Content>

@@ -7,25 +7,25 @@ const GallerySection = () => {
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-around z-0">
           <div className="flex flex-wrap gap-4">
             <Image
-              src="/g-1.webp"
+              src="/g-1.png"
               alt="Event Image 1"
               width={380}
               height={380}
-              className="z-10 lg:top-[-250px] lg:left-20 mobile:top-32 mobile:left-10 absolute rounded-3xl lg:w-96 mobile:w-48"
+              className="z-10 lg:top-[-250px] lg:left-20 mobile:top-32 mobile:left-10 absolute rounded-3xl lg:w-96 mobile:w-48 h-[500px] object-cover"
             />
             <Image
-              src="/g-2.webp"
+              src="/studio-3.jpeg"
               alt="Event Image 2"
               width={300}
               height={300}
-              className="mobile:hidden lg:flex z-10 absolute top-[100px] right-70 rounded-3xl"
+              className="mobile:hidden lg:flex z-10 absolute top-[-250px] right-70 rounded-3xl"
             />
             <Image
-              src="/g-3.webp"
+              src="/g-3.png"
               alt="Event Image 3"
-              width={500}
+              width={300}
               height={250}
-              className="mobile:hidden lg:flex z-10 absolute top-[-260px] right-[-330px] rounded-3xl"
+              className="mobile:hidden lg:flex z-10 absolute top-[-300px] right-[-130px] rounded-3xl h-[450px]"
             />
             <Image
               src="/g-4.webp"
@@ -35,28 +35,28 @@ const GallerySection = () => {
               className="mobile:hidden lg:flex z-10 absolute top-[-160px] left-[-350px] rounded-3xl"
             />
             <Image
-              src="/g-5.webp"
+              src="/g-5.jpeg"
               alt="Event Image 1"
               width={450}
               height={450}
-              className="mobile:hidden lg:flex z-10 bottom-[-690px] left-[-380px] absolute rounded-3xl"
+              className="mobile:hidden lg:flex z-10 bottom-[-690px] left-[-280px] absolute rounded-3xl h-[550px]"
             />
             <Image
-              src="/g-6.webp"
+              src="/g-6.jpg"
               alt="Event Image 2"
               width={300}
               height={300}
-              className="z-10 absolute lg:bottom-[-490px] mobile:bottom-[-210px] lg:right-[520px] rounded-3xl lg:w-96 mobile:w-48"
+              className="z-10 absolute lg:bottom-[-500px] mobile:bottom-[-210px] lg:right-[600px] rounded-3xl lg:w-[400px] mobile:w-48 h-[500px] object-cover"
             />
             <Image
-              src="/g-7.webp"
+              src="/g-7.jpg"
               alt="Event Image 3"
-              width={250}
+              width={300}
               height={250}
-              className="mobile:hidden lg:flex z-10 absolute bottom-[-590px] right-[160px] rounded-3xl"
+              className="mobile:hidden lg:flex z-10 absolute bottom-[-590px] right-[160px] rounded-3xl h-[450px]"
             />
             <Image
-              src="/g-8.webp"
+              src="/g-8.jpeg"
               alt="Event Image 3"
               width={350}
               height={350}
