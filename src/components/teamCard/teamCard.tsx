@@ -4,7 +4,7 @@ import React from "react";
 const TeamCard = ({ member }) => {
   return (
     <div className="relative border border-black rounded-2xl overflow-hidden">
-      <div className="w-full h-96 relative">
+      <div className="w-full h-[600px] relative">
         {member.image ? (
           <Image
             src={member.image}

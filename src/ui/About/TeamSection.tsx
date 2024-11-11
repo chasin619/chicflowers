@@ -10,8 +10,8 @@ const TeamSection = () => {
         Our Team
       </h1>
       <div className="w-full h-[60%] relative mt-4">
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center w-full mx-auto z-10">
-          <span className="text-white lg:text-4xl mobile:text-lg md:text-2xl font-semibold text-center lg:w-[60%] mobile:w-[90%]">
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-end justify-center w-full mx-auto z-10">
+          <span className="text-white lg:text-4xl mobile:text-lg md:text-2xl font-semibold text-center lg:w-[60%] mobile:w-[90%] mb-20">
             “ALL IN” is a mindset. It's showing up each day ready to bring your
             best, showing up for your clients, and, most importantly, showing up
             for each other.
@@ -19,7 +19,7 @@ const TeamSection = () => {
         </div>
         <div className="relative w-full lg:h-screen mobile:h-[70vh]">
           <Image
-            src="/team.jpg"
+            src="/team.webp"
             alt="Our Team"
             layout="fill"
             objectFit="cover"

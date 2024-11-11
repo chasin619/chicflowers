@@ -78,33 +78,53 @@ export const AboutAccordionData: AccordionItem[] = [
 
 export const teamMembers: TeamMember[] = [
   {
-    name: "Avi Stahler",
-    position: "Senior Event Designer",
-    image: "/member-1.jpg",
+    name: "Alona Chasin",
+    position: "Founder/CEO",
+    image: "/member-1.jpeg",
   },
   {
-    name: "Leigh Lloveras",
-    position: "Senior Event Designer",
-    image: "/member-2.jpg",
+    name: "Albina",
+    position: "SENIOR EVENT DESIGNER",
+    image: "/member-2.jpeg",
   },
   {
-    name: "Bridget Murphy",
-    position: "Event Designer",
-    image: "/member-3.jpg",
+    name: "Victoria",
+    position: "EVENT DESIGNER",
+    image: "/member-3.jpeg",
+  },
+  {
+    name: "Alla",
+    position: "EVENT DESIGNER",
+    image: "/member-4.jpeg",
+  },
+  {
+    name: "Antonina",
+    position: "EVENT DESIGNER",
+    image: "/member-5.jpeg",
+  },
+  {
+    name: "Alexander",
+    position: "DESIGN ASSOCIATE",
+    image: "/member-6.jpeg",
+  },
+  {
+    name: "Alexey",
+    position: "CCO + VP of sales",
+    image: "/member-7.jpeg",
   },
 ];
 
 export const navRoutes = [
   {
-    href: '/about',
-    name: 'About',
+    href: "/about",
+    name: "About",
   },
   {
-    href: '/capabilities',
-    name: 'Capabilities',
+    href: "/capabilities",
+    name: "Capabilities",
   },
   {
-    href: '/contact',
-    name: 'Contact Us',
+    href: "/contact",
+    name: "Contact Us",
   },
-]
+];
