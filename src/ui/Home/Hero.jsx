@@ -1,6 +1,7 @@
 "use client";
 
 import gsap from "gsap";
+import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 
 const Hero = () => {
@@ -61,7 +62,12 @@ const Hero = () => {
           style={{ opacity: 0 }}
           className="uppercase text-white hover:text-black font-bold border-2 border-white rounded-[4px] h-12 px-5 text-[15px] hover:bg-white transition-colors duration-200"
         >
-          Lets Play
+          <Link
+            href="https://chiclu.com/proposal_builder_v2/my_wedding/steps?r=1630206800218x644006149700008200&id=93462"
+            target="_blank"
+          >
+            Lets Play
+          </Link>
         </button>
       </div>
     </div>
