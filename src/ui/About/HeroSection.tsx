@@ -17,10 +17,10 @@ const HeroSection = () => {
           The Story of Chic
         </h1>
         <p className="text-center mt-4 mb-8 lg:text-2xl md:text-xl mobile:text-lg font-medium lg:w-[60%] mobile:w-[90%]">
-          Authenticity is the throughline at Chic. It’s what’s taken us from a
-          balloon shop in Brooklyn to the world’s stage. Those who follow us
-          know we like to serve the real behind the pretty, and the story of our
-          Chic beginnings is no different.
+          Authenticity is at the core of Chic Flowers. It’s what has made us a premier wedding florist in San Diego. 
+          Our clients and followers know we showcase the true artistry behind our beautiful floral arrangements. 
+          The story of Chic Flowers is rooted in dedication and passion, 
+          guiding us to become a trusted leader in San Diego's wedding industry.
         </p>
       </div>
     </div>
