@@ -66,7 +66,7 @@ const Hero = () => {
             href="https://chicflowers.com/contact"
             target="_blank"
           >
-            Lets Play
+            Lets Play 
           </Link>
         </button>
       </div>
