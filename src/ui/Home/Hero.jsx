@@ -63,7 +63,7 @@ const Hero = () => {
           className="uppercase text-white hover:text-black font-bold border-2 border-white rounded-[4px] h-12 px-5 text-[15px] hover:bg-white transition-colors duration-200"
         >
           <Link
-            href="https://chiclu.com/proposal_builder_v2/my_wedding/steps?r=1630206800218x644006149700008200&id=93462"
+            href="https://chicflowers.com/contact"
             target="_blank"
           >
             Lets Play
