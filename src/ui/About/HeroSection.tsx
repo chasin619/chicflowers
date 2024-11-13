@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <div className="relative h-screen w-full">
       <video
-        src="/wedding.mp4"
+        src="/wedding.mov"
         autoPlay
         muted
         loop
