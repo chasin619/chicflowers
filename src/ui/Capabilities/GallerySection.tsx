@@ -11,7 +11,7 @@ const GallerySection = () => {
               alt="Event Image 1"
               width={380}
               height={380}
-              className="z-10 lg:top-[-250px] lg:left-20 mobile:top-32 mobile:left-10 absolute rounded-3xl lg:w-96 mobile:w-48 h-[500px] object-cover"
+              className="mobile:hidden z-10 lg:top-[-250px] lg:left-20 mobile:top-32 mobile:left-10 absolute rounded-3xl lg:w-96 mobile:w-48 h-[500px] object-cover"
             />
             <Image
               src="/studio-3.jpeg"
@@ -46,7 +46,7 @@ const GallerySection = () => {
               alt="Event Image 2"
               width={300}
               height={300}
-              className="z-10 absolute lg:bottom-[-500px] mobile:bottom-[-210px] lg:right-[600px] rounded-3xl lg:w-[400px] mobile:w-48 h-[500px] object-cover"
+              className="mobile:hidden z-10 absolute lg:bottom-[-500px] mobile:bottom-[-210px] lg:right-[600px] rounded-3xl lg:w-[400px] mobile:w-48 h-[500px] object-cover"
             />
             <Image
               src="/g-7.jpg"
