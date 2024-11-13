@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const EventShowcase = () => {
   return (
@@ -17,28 +18,43 @@ const EventShowcase = () => {
         <span>AS SEEN IN:</span>
 
         <div className="flex w-full items-center gap-10 flex-wrap justify-center">
-          <img
-            src="/haute-living.png"
+          <Image
+            width="150"
+            height="150"
+            src="/haute-living.webp"
+            loading="lazy"
             alt="Haute Living"
             className="w-[150px] xl:w-[184px]"
           />
-          <img
-            src="/vogue.png"
+          <Image
+            width="150"
+            height="150"
+            src="/vogue.webp"
+            loading="lazy"
             alt="Vogue"
             className="w-[150px] xl:w-[184px]"
           />
-          <img
-            src="/brides.png"
+          <Image
+            width="150"
+            height="150"
+            src="/brides.webp"
+            loading="lazy"
             alt="Brides"
             className="w-[150px] xl:w-[184px]"
           />
-          <img
-            src="/grace-ormonde.png"
+          <Image
+            width="150"
+            height="150"
+            src="/grace-ormonde.webp"
+            loading="lazy"
             alt="Grace Ormonde"
             className="w-[150px] xl:w-[184px]"
           />
-          <img
-            src="/carats-cake.png"
+          <Image
+            width="150"
+            height="150"
+            src="/carats-cake.webp"
+            loading="lazy"
             alt="Carats and Cake"
             className="w-[150px] xl:w-[184px]"
           />

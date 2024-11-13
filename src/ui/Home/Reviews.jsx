@@ -3,6 +3,7 @@
 import { motion, useSpring } from "framer-motion";
 import React, { useEffect, useRef } from "react";
 import { reviewsData } from "@/data/home";
+import Image from "next/image";
 
 const CURSOR_SIZE = 80;
 
@@ -157,7 +158,14 @@ const Reviews = () => {
           {reviewsData.map((review, i) => (
             <React.Fragment key={i}>
               <div className="w-[50vw] md:w-[40vw] lg:w-[32vw] xl:w-[25vw] shrink-0 aspect-[511/757]">
-                <img src={review} className="w-full h-full object-cover" />
+                <Image
+                  src={review}
+                  height={100}
+                  width={100}
+                  loading="lazy"
+                  alt="Review Images"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {i < reviewsData.length - 1 && (

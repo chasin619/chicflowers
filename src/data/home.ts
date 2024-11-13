@@ -1,13 +1,13 @@
 export const reviewsData = [
-  "/review-1.jpg",
-  "/review-2.jpg",
-  "/review-3.jpg",
-  "/review-4.jpg",
-  "/review-5.jpg",
-  "/review-6.jpg",
-  "/review-7.jpg",
-  "/review-8.jpg",
-  "/review-9.jpg",
+  "/review-1.webp",
+  "/review-2.webp",
+  "/review-3.webp",
+  "/review-4.webp",
+  "/review-5.webp",
+  "/review-6.webp",
+  "/review-7.webp",
+  "/review-8.webp",
+  "/review-9.webp",
 ];
 
 export const portfolioData = [

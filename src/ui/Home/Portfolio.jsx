@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { motion, useSpring } from "framer-motion";
 import { portfolioData } from "@/data/home";
 import Link from "next/link";
+import Image from "next/image";
 
 const CURSOR_SIZE = 150;
 
@@ -64,8 +65,12 @@ const Portfolio = () => {
             ></motion.div>
           </div>
 
-          <img
+          <Image
             src={item.images[0].src}
+            height={200}
+            width={200}
+            alt="Portfolio Images"
+            loading="lazy"
             className="w-full h-full object-cover"
           />
         </Link>

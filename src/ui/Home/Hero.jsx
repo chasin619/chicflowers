@@ -34,7 +34,7 @@ const Hero = () => {
         ref={background}
         style={{
           backgroundImage:
-            "linear-gradient(#00000080, #00000080), url(/hero.jpg)",
+            "linear-gradient(#00000080, #00000080), url(/hero.webp)",
           backgroundPosition: "50% 6%",
           scale: 1.15,
         }}
@@ -62,11 +62,8 @@ const Hero = () => {
           style={{ opacity: 0 }}
           className="uppercase text-white hover:text-black font-bold border-2 border-white rounded-[4px] h-12 px-5 text-[15px] hover:bg-white transition-colors duration-200"
         >
-          <Link
-            href="https://chicflowers.com/contact"
-            target="_blank"
-          >
-            Lets Play 
+          <Link href="https://chicflowers.com/contact" target="_blank">
+            Lets Play
           </Link>
         </button>
       </div>
