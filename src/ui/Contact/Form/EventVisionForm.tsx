@@ -6,26 +6,28 @@ const EventVisionForm = ({ data, updateFields }) => {
   };
 
   const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
+    const files = Array.from(e.target.files);
+    const visuals = [];
+
+    files.forEach((file) => {
       const reader = new FileReader();
       reader.onloadend = () => {
-        const base64Data = reader.result;
-        updateFields("media", {
-          visuals: [
-            {
-              name: file.name,
-              content: base64Data,
-              preview: URL.createObjectURL(file),
-            },
-          ],
+        visuals.push({
+          name: file.name,
+          content: reader.result,
+          preview: URL.createObjectURL(file),
         });
+
+        if (visuals.length === files.length) {
+          const updatedVisuals = data.visuals
+            ? [...data.visuals, ...visuals]
+            : visuals;
+          updateFields("media", { visuals: updatedVisuals });
+        }
       };
       reader.readAsDataURL(file);
-    }
+    });
   };
-
-  console.log(data);
 
   return (
     <div className="w-full mobile:px-8 lg:px-16">
@@ -63,6 +65,7 @@ const EventVisionForm = ({ data, updateFields }) => {
                 name="visuals"
                 accept="image/*"
                 id="visuals"
+                multiple
                 onChange={handleFileChange}
                 className="hidden"
               />
@@ -73,17 +76,24 @@ const EventVisionForm = ({ data, updateFields }) => {
               >
                 Select File
               </button>
-              <div className="mt-4">
-                {data.visuals && data.visuals[0].preview && (
-                  <img
-                    src={data.visuals[0].preview}
-                    alt="Preview"
-                    className="w-20 h-20 object-cover rounded-lg"
-                  />
-                )}
-              </div>
             </div>
           </label>
+        </div>
+
+        <div className="mt-8">
+          <h3 className="text-lg font-semibold mb-4">Uploaded Images</h3>
+          <div className="flex flex-wrap gap-4">
+            {data.visuals &&
+              data.visuals.map((visual, index) => (
+                <div key={index} className="w-20 h-20">
+                  <img
+                    src={visual.preview}
+                    alt={`Preview ${index + 1}`}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+              ))}
+          </div>
         </div>
       </form>
     </div>

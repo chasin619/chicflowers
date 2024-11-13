@@ -63,11 +63,10 @@ export async function POST(request: Request) {
     }</p>
     <p><strong>Contact Details:</strong> ${additionalInfo.contact}</p>
   `,
-    attachments: [
-      {
-        path: media.visuals[0].content,
-      },
-    ],
+    attachments: media.visuals.map((visual) => ({
+      filename: visual.name,
+      path: visual.content,
+    })),
   };
 
   try {
