@@ -4,14 +4,15 @@ import React from "react";
 const TeamCard = ({ member }) => {
   return (
     <div className="relative border border-black rounded-2xl overflow-hidden">
-      <div className="w-full h-[600px] relative">
+      <div className="w-full mobile:h-[300px] md:h-[600px] relative">
         {member.image ? (
           <Image
             src={member.image}
             alt={member.name}
             layout="fill"
             objectFit="cover"
-            className="grayscale"
+            objectPosition="center 20%"
+            className="grayscale mobile:object-top md:object-center"
           />
         ) : (
           <div className="flex items-center justify-center w-full h-full bg-black">
