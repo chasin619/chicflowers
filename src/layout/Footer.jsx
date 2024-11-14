@@ -46,26 +46,26 @@ const Footer = () => {
           </ul>
 
           <div className="flex text-xl sm:text-2xl gap-5">
-            <a href="#" target="_blank">
+            <Link href="https://www.instagram.com/chic.flowers" target="_blank">
               <FontAwesomeIcon
                 icon={faInstagram}
                 className="h-[1em] text-black hover:text-[#18799B] transition-colors duration-200"
               />
-            </a>
+            </Link>
 
-            <a href="#" target="_blank">
+            <Link href="https://www.facebook.com/chicflowersFB" target="_blank">
               <FontAwesomeIcon
                 icon={faFacebookF}
                 className="h-[1em] text-black hover:text-[#18799B] transition-colors duration-200"
               />
-            </a>
+            </Link>
 
-            <a href="#" target="_blank">
+            <Link href="https://www.tiktok.com/@alona.chic" target="_blank">
               <FontAwesomeIcon
                 icon={faTiktok}
                 className="h-[1em] text-black hover:text-[#18799B] transition-colors duration-200"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

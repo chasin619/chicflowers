@@ -68,10 +68,13 @@ const Portfolio = () => {
           <Image
             src={item.images[0].src}
             height={200}
-            width={200}
+            width={300}
             alt="Portfolio Images"
             loading="lazy"
-            className="w-full h-full object-cover"
+            objectFit="cover"
+            className="w-full h-full"
+            blurDataURL="data:..."
+            placeholder="blur"
           />
         </Link>
       ))}
