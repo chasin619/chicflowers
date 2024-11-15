@@ -21,7 +21,7 @@ const TeamCard = ({ member }) => {
         )}
       </div>
       <div className="p-5">
-        <h3 className="text-2xl font-semibold">{member.name}</h3>
+        <h2 className="text-2xl font-semibold">{member.name}</h2>
         <p className="text-base text-gray-500 uppercase">{member.position}</p>
         <div className="mt-4">
           <button className="w-8 h-8 border border-black rounded-full flex items-center justify-center">
