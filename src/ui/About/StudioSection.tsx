@@ -21,14 +21,16 @@ const StudioSection = () => {
           <Image
             src="/studio-1.webp"
             alt="Group discussion"
+            loading="lazy"
             layout="fill"
             objectFit="cover"
           />
         </div>
         <div className="relative w-full lg:w-[35%] lg:h-[55vh] mobile:h-[50vh]">
           <Image
-            src="/studio-2.jpeg"
+            src="/studio-2.webp"
             alt="Artistic work"
+            loading="lazy"
             layout="fill"
             objectFit="cover"
           />
@@ -38,8 +40,9 @@ const StudioSection = () => {
       <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-5 mt-6">
         <div className="relative w-full lg:w-[35%] lg:h-[55vh] mobile:h-[50vh]">
           <Image
-            src="/studio-3.jpeg"
+            src="/studio-3.webp"
             alt="Artistic work"
+            loading="lazy"
             layout="fill"
             objectFit="cover"
           />
@@ -48,6 +51,7 @@ const StudioSection = () => {
           <Image
             src="/studio-4.webp"
             alt="Group discussion"
+            loading="lazy"
             layout="fill"
             objectFit="cover"
             className="grayscale"
@@ -60,6 +64,7 @@ const StudioSection = () => {
           <Image
             src="/studio-5.webp"
             alt="Artistic work"
+            loading="lazy"
             layout="fill"
             objectFit="cover"
           />
@@ -69,7 +74,7 @@ const StudioSection = () => {
       <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-5 mt-6">
         <div className="relative w-full lg:w-[35%] lg:h-[55vh] mobile:h-[40vh]">
           <Image
-            src="/studio-6.jpeg"
+            src="/studio-6.webp"
             alt="Artistic work"
             layout="fill"
             objectFit="cover"
@@ -77,8 +82,9 @@ const StudioSection = () => {
         </div>
         <div className="relative w-full lg:w-[65%] lg:h-[55vh] mobile:h-[30vh]">
           <Image
-            src="/studio-7.jpeg"
+            src="/studio-7.webp"
             alt="Group discussion"
+            loading="lazy"
             layout="fill"
             objectFit="cover"
           />
