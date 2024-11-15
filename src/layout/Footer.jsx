@@ -31,36 +31,56 @@ const Footer = () => {
             San Diego, CA 92101
           </p>
 
-          <h6 className="text-[46px] sm:text-[45px] lg:text-[55px] !leading-[1.1] translate-y-[0.02em] font-italiana font-bold tracking-widest -translate-x-[0.05em] sm:translate-x-0">
+          <p className="text-[46px] sm:text-[45px] lg:text-[55px] !leading-[1.1] translate-y-[0.02em] font-italiana font-bold tracking-widest -translate-x-[0.05em] sm:translate-x-0">
             CHIC
-          </h6>
+          </p>
         </div>
 
         <div className="flex flex-col sm:flex-row justify-between px-4 sm:px-6 sm:items-center pt-5 pb-12 gap-y-4">
           <ul className="sm:text-lg font-medium leading-[1.3] sm:leading-[1.5em]">
-            <li>619-919-2437</li>
-            <li>chicflowersonline@gmail.com</li>
-            <Link href="/contact">
+            <li>
+              <Link href="tel:619-919-2437" legacyBehavior>
+                619-919-2437
+              </Link>
+            </li>
+            <li>
+              <Link href="mailto:chicflowersonline@gmail.com" legacyBehavior>
+                chicflowersonline@gmail.com
+              </Link>
+            </li>
+            <Link href="/contact" legacyBehavior>
               <li>Event Inquiries</li>
             </Link>
           </ul>
 
           <div className="flex text-xl sm:text-2xl gap-5">
-            <Link href="https://www.instagram.com/chic.flowers" target="_blank">
+            <Link
+              href="https://www.instagram.com/chic.flowers"
+              target="_blank"
+              aria-label="Visit Chic Flowers on Instagram"
+            >
               <FontAwesomeIcon
                 icon={faInstagram}
                 className="h-[1em] text-black hover:text-[#18799B] transition-colors duration-200"
               />
             </Link>
 
-            <Link href="https://www.facebook.com/chicflowersFB" target="_blank">
+            <Link
+              href="https://www.facebook.com/chicflowersFB"
+              target="_blank"
+              aria-label="Visit Chic Flowers on Facebook"
+            >
               <FontAwesomeIcon
                 icon={faFacebookF}
                 className="h-[1em] text-black hover:text-[#18799B] transition-colors duration-200"
               />
             </Link>
 
-            <Link href="https://www.tiktok.com/@alona.chic" target="_blank">
+            <Link
+              href="https://www.tiktok.com/@alona.chic"
+              target="_blank"
+              aria-label="Visit Chic Flowers on TikTok"
+            >
               <FontAwesomeIcon
                 icon={faTiktok}
                 className="h-[1em] text-black hover:text-[#18799B] transition-colors duration-200"

@@ -149,8 +149,19 @@ const Reviews = () => {
             }}
             className="fixed rounded-full bg-[#18799B] top-0 left-0 pointer-events-none flex justify-center gap-2"
           >
-            <img src="/arrow-long.svg" className="w-4" />
-            <img src="/arrow-long.svg" className="w-4 rotate-180" />
+            <Image
+              src="/arrow-long.svg"
+              alt="Left Arrow"
+              height="16"
+              width="16"
+            />
+            <Image
+              src="/arrow-long.svg"
+              className="rotate-180"
+              alt="Right Arrow"
+              height="16"
+              width="16"
+            />
           </motion.div>
         </div>
 
