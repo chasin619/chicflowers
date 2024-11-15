@@ -3,6 +3,7 @@ import Link from "next/link";
 import {
   faFacebookF,
   faInstagram,
+  faPinterest,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -50,23 +51,46 @@ const Navbar: React.FC<NavbarTypes> = ({ onMenuClose }) => {
         })}
       </ul>
       <div className="flex text-xl sm:text-2xl gap-5">
-        <Link href="https://www.instagram.com/chic.flowers" target="_blank">
+        <Link
+          href="https://www.instagram.com/chic.flowers"
+          target="_blank"
+          aria-label="Visit Chic Flowers on Instagram"
+        >
           <FontAwesomeIcon
             icon={faInstagram}
             className="h-[1em] text-black hover:text-[#18799B] transition-colors duration-200"
           />
         </Link>
 
-        <Link href="https://www.facebook.com/chicflowersFB" target="_blank">
+        <Link
+          href="https://www.facebook.com/chicflowersFB"
+          target="_blank"
+          aria-label="Visit Chic Flowers on Facebook"
+        >
           <FontAwesomeIcon
             icon={faFacebookF}
             className="h-[1em] text-black hover:text-[#18799B] transition-colors duration-200"
           />
         </Link>
 
-        <Link href="https://www.tiktok.com/@alona.chic" target="_blank">
+        <Link
+          href="https://www.tiktok.com/@alona.chic"
+          target="_blank"
+          aria-label="Visit Chic Flowers on TikTok"
+        >
           <FontAwesomeIcon
             icon={faTiktok}
+            className="h-[1em] text-black hover:text-[#18799B] transition-colors duration-200"
+          />
+        </Link>
+
+        <Link
+          href="https://www.pinterest.com/chicflowers_/"
+          target="_blank"
+          aria-label="Visit Chic Flowers on TikTok"
+        >
+          <FontAwesomeIcon
+            icon={faPinterest}
             className="h-[1em] text-black hover:text-[#18799B] transition-colors duration-200"
           />
         </Link>

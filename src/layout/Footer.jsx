@@ -1,6 +1,7 @@
 import {
   faFacebookF,
   faInstagram,
+  faPinterest,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -83,6 +84,17 @@ const Footer = () => {
             >
               <FontAwesomeIcon
                 icon={faTiktok}
+                className="h-[1em] text-black hover:text-[#18799B] transition-colors duration-200"
+              />
+            </Link>
+            
+            <Link
+              href="https://www.pinterest.com/chicflowers_/"
+              target="_blank"
+              aria-label="Visit Chic Flowers on TikTok"
+            >
+              <FontAwesomeIcon
+                icon={faPinterest}
                 className="h-[1em] text-black hover:text-[#18799B] transition-colors duration-200"
               />
             </Link>
