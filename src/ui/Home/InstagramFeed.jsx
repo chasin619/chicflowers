@@ -21,16 +21,15 @@ const InstagramFeed = () => {
 
   return (
     <div className="flex flex-col items-center text-center mt-24 sm:mt-32 lg:mt-40 mb-10 gap-9 sm:gap-12">
-      <h2 className="uppercase text-[40px] sm:text-[46px] lg:text-[52px] !leading-[1.1em] font-italiana font-semibold">
+      <h2 className="uppercase text-[40px] sm:text-[46px] lg:text-[52px] !leading-[1.1em] font-medium">
         FOLLOW ALONG
       </h2>
 
-      <h3 className="uppercase font-italiana text-lg font-semibold">
-        @chic.flowers
-      </h3>
+      <h3 className="uppercase text-lg font-semibold">@chic.flowers</h3>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 w-full">
-        {feed?.filter((post) => post.media_url)
+        {feed
+          ?.filter((post) => post.media_url)
           .slice(0, 4)
           .map((post, i) => (
             <a
