@@ -21,9 +21,13 @@ const nunitoSans = Nunito_Sans({
 });
 
 export default function RootLayout({ children }) {
+  const canonicalUrl =
+    typeof window !== "undefined" ? window.location.href : "";
+
   return (
     <html lang="en">
       <head>
+        <link rel="canonical" href={canonicalUrl} />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-E7NY2W59JZ"
