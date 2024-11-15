@@ -10,7 +10,7 @@ import { Nunito_Sans } from "next/font/google";
 export const metadata = {
   title: "CHIC Flowers - Wedding Florist",
   description:
-    "At CHIC in San Diego, we craft bespoke floral arrangements for weddings, from elegant bouquets to stunning centerpieces and ceremony backdrops. With passion and precision, we bring your vision to life, creating timeless designs for your special day.",
+    "CHIC in San Diego specializes in bespoke wedding floral designs, including bouquets, centerpieces, and backdrops, crafted to make your special day unforgettable",
 };
 
 const nunitoSans = Nunito_Sans({
@@ -63,6 +63,16 @@ export default function RootLayout({ children }) {
         <meta httpEquiv="pragma" content="no-cache" />
         <meta httpEquiv="expires" content="-1" />
         <meta httpEquiv="cache-control" content="no-cache" />
+        <meta
+          property="og:title"
+          content="CHIC Wedding Florals | San Diego's Best Florist"
+        />
+        <meta
+          property="og:description"
+          content="Elegant bouquets, centerpieces, and floral backdrops crafted for your perfect wedding day in San Diego."
+        />
+        <meta property="og:url" content={process.env.NEXT_PUBLIC_BASE_URL} />
+        <meta property="og:type" content="website" />
       </head>
       <body className={`antialiased ${nunitoSans.className}`}>
         <Setup />
