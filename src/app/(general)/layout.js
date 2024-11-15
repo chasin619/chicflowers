@@ -10,7 +10,7 @@ import { Nunito_Sans } from "next/font/google";
 export const metadata = {
   title: "CHIC Flowers - Wedding Florist",
   description:
-    "At CHIC, we believe that every wedding deserves a touch of floral magic. Based in San Diego, we specialize in creating bespoke floral arrangements that capture the beauty and essence of your special day. From elegant bouquets to intricate centerpieces and breathtaking ceremony backdrops, our designs are crafted with passion and precision to reflect your unique love story. Let us transform your vision into a reality with timeless blooms and expert artistry, ensuring that every floral detail is as memorable as the moments you cherish.",
+    "At CHIC in San Diego, we craft bespoke floral arrangements for weddings, from elegant bouquets to stunning centerpieces and ceremony backdrops. With passion and precision, we bring your vision to life, creating timeless designs for your special day.",
 };
 
 const nunitoSans = Nunito_Sans({
