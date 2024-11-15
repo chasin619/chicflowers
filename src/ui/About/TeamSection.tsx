@@ -20,6 +20,7 @@ const TeamSection = () => {
         <div className="relative w-full lg:h-screen mobile:h-[70vh]">
           <Image
             src="/team.webp"
+            loading="lazy"
             alt="Our Team"
             layout="fill"
             objectFit="cover"

@@ -84,37 +84,37 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Alona Chasin",
     position: "Founder/CEO",
-    image: "/member-1.jpeg",
+    image: "/member-1.webp",
   },
   {
     name: "Albina",
     position: "SENIOR EVENT DESIGNER",
-    image: "/member-2.jpeg",
+    image: "/member-2.webp",
   },
   {
     name: "Victoria",
     position: "EVENT DESIGNER",
-    image: "/member-3.jpeg",
+    image: "/member-3.webp",
   },
   {
     name: "Alla",
     position: "EVENT DESIGNER",
-    image: "/member-4.jpeg",
+    image: "/member-4.webp",
   },
   {
     name: "Antonina",
     position: "EVENT DESIGNER",
-    image: "/member-5.jpeg",
+    image: "/member-5.webp",
   },
   {
     name: "Alexander",
     position: "DESIGN ASSOCIATE",
-    image: "/member-6.jpeg",
+    image: "/member-6.webp",
   },
   {
     name: "Alexey",
     position: "CCO + VP of sales",
-    image: "/member-7.jpeg",
+    image: "/member-7.webp",
   },
 ];
 

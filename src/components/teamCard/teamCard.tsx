@@ -11,6 +11,7 @@ const TeamCard = ({ member }) => {
             alt={member.name}
             layout="fill"
             objectFit="cover"
+            loading="lazy"
             objectPosition="center 20%"
             className="grayscale mobile:object-top md:object-center"
           />
