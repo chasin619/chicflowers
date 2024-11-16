@@ -8,10 +8,9 @@ import Script from "next/script";
 import { Nunito_Sans } from "next/font/google";
 
 export const metadata = {
-  title:
-    "Chic Wedding Designer | San Diego Wedding Florist | Los Angelas Wedding Florist",
+  title: "CHIC Flowers - Wedding Florist",
   description:
-    "Chic in San Diego specializes in bespoke wedding floral designs, including bouquets, centerpieces, and backdrops, crafted to make your special day unforgettable.",
+    "Chic in San Diego specializes in bespoke wedding floral designs, including bouquets, centerpieces, and backdrops, crafted to make your special day unforgettable",
   openGraph: {
     title: "Chic Wedding Florals | San Diego's Best Florist",
     description:
