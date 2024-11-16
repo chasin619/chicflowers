@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Chic Flowers - About",
     description:
       "Discover The Chic Edge, a uniquely positioned design and production house. Meet our talented team and explore what makes us stand out.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/about`,
+    url: `https://chicflowers.com/about`,
     type: "website",
   },
   twitter: {

@@ -15,7 +15,7 @@ export const metadata = {
     title: "Contact Chic Wedding Florals",
     description:
       "Reach out to us for personalized floral arrangements to make your wedding unforgettable.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/contact`,
+    url: `https://chicflowers.com/contact`,
     image: "https://yourwebsite.com/assets/images/contact-banner.jpg",
     type: "article",
   },
