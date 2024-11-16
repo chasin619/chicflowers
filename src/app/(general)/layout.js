@@ -15,16 +15,7 @@ export const metadata = {
     title: "Chic Wedding Florals | San Diego's Best Florist",
     description:
       "Elegant bouquets, centerpieces, and floral backdrops crafted for your perfect wedding day in San Diego.",
-    // url: "https://chicflowers.com",
     type: "website",
-    // images: [
-    //   {
-    //     url: "https://chicflowers.com/favicon.ico",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Chic Wedding Florals - Bespoke Wedding Floral Designs",
-    //   },
-    // ],
   },
 };
 
@@ -94,7 +85,6 @@ const schemaData = {
 export default function RootLayout({ children }) {
   const canonicalUrl =
     typeof window !== "undefined" ? window.location.href : "";
-  console.log(canonicalUrl);
 
   return (
     <html lang="en">
