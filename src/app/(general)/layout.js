@@ -136,11 +136,11 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
-        <meta property="og:url" content="https://chicflowers.com" />
+        {/* <meta property="og:url" content="https://chicflowers.com" />
         <meta
           property="og:image"
           content="https://chicflowers.com/favicon.ico"
-        />
+        /> */}
         <meta httpEquiv="pragma" content="no-cache" />
         <meta httpEquiv="expires" content="-1" />
         <meta httpEquiv="cache-control" content="no-cache" />
