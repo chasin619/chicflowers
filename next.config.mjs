@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: false,
+  reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -9,6 +9,19 @@ const nextConfig = {
   },
   images: {
     domains: ["chicflowers.s3.amazonaws.com"],
+  },
+  async headers() {
+    return [
+      {
+        source: "/(.*).(jpg|jpeg|png|gif|webp|svg)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+    ];
   },
 };
 
