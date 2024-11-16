@@ -1,9 +1,29 @@
+import React from "react";
+import { Metadata } from "next";
 import { Accordion } from "@/components/accordion";
 import HeroSection from "@/ui/About/HeroSection";
 import StudioSection from "@/ui/About/StudioSection";
 import TeamSection from "@/ui/About/TeamSection";
 import { AboutAccordionData } from "@/utils/constants";
-import React from "react";
+
+export const metadata: Metadata = {
+  title: "Chic Flowers - About",
+  description:
+    "Explore The Chic Edge, a design and production house that combines creativity, empathy, and expertise. Learn more about our team, studio, and unique approach.",
+  openGraph: {
+    title: "Chic Flowers - About",
+    description:
+      "Discover The Chic Edge, a uniquely positioned design and production house. Meet our talented team and explore what makes us stand out.",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/about`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Chic Flowers - About",
+    description:
+      "Explore The Chic Edge, a design and production house that combines creativity, empathy, and expertise.",
+  },
+};
 
 const About = () => {
   return (
