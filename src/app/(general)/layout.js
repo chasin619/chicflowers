@@ -15,16 +15,16 @@ export const metadata = {
     title: "Chic Wedding Florals | San Diego's Best Florist",
     description:
       "Elegant bouquets, centerpieces, and floral backdrops crafted for your perfect wedding day in San Diego.",
-    url: "https://chicflowers.com",
+    // url: "https://chicflowers.com",
     type: "website",
-    images: [
-      {
-        url: "https://chicflowers.com/favicon.ico",
-        width: 1200,
-        height: 630,
-        alt: "Chic Wedding Florals - Bespoke Wedding Floral Designs",
-      },
-    ],
+    // images: [
+    //   {
+    //     url: "https://chicflowers.com/favicon.ico",
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "Chic Wedding Florals - Bespoke Wedding Floral Designs",
+    //   },
+    // ],
   },
 };
 
@@ -136,11 +136,11 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
-        {/* <meta property="og:url" content="https://chicflowers.com" />
+        <meta property="og:url" content="https://chicflowers.com" />
         <meta
           property="og:image"
           content="https://chicflowers.com/favicon.ico"
-        /> */}
+        />
         <meta httpEquiv="pragma" content="no-cache" />
         <meta httpEquiv="expires" content="-1" />
         <meta httpEquiv="cache-control" content="no-cache" />
