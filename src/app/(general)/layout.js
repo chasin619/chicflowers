@@ -8,9 +8,17 @@ import Script from "next/script";
 import { Nunito_Sans } from "next/font/google";
 
 export const metadata = {
-  title: "CHIC Flowers - Wedding Florist",
+  title:
+    "Chic Wedding Designer | San Diego Wedding Florist | Los Angelas Wedding Florist",
   description:
-    "CHIC in San Diego specializes in bespoke wedding floral designs, including bouquets, centerpieces, and backdrops, crafted to make your special day unforgettable",
+    "Chic in San Diego specializes in bespoke wedding floral designs, including bouquets, centerpieces, and backdrops, crafted to make your special day unforgettable.",
+  openGraph: {
+    title: "Chic Wedding Florals | San Diego's Best Florist",
+    description:
+      "Elegant bouquets, centerpieces, and floral backdrops crafted for your perfect wedding day in San Diego.",
+    url: process.env.NEXT_PUBLIC_BASE_URL,
+    type: "website",
+  },
 };
 
 const nunitoSans = Nunito_Sans({
@@ -19,6 +27,62 @@ const nunitoSans = Nunito_Sans({
   style: ["normal", "italic"],
   display: "swap",
 });
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Chic Wedding Designer",
+  description:
+    "Chic in San Diego specializes in bespoke wedding floral designs, including bouquets, centerpieces, and backdrops, crafted to make your special day unforgettable.",
+  url: "https://chicflowers.com",
+  logo: "https://chicflowers.com/favicon.ico",
+  telephone: "+619-919-2437",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "777 5th ave",
+    addressLocality: "San Diego",
+    addressRegion: "CA",
+    postalCode: "92101",
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "32.715736",
+    longitude: "-117.161087",
+  },
+  areaServed: [
+    { "@type": "Place", name: "San Diego" },
+    { "@type": "Place", name: "Los Angeles" },
+  ],
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "00:00",
+      closes: "23:59",
+    },
+  ],
+  priceRange: "$$",
+  sameAs: [
+    "https://www.instagram.com/chic.flowers",
+    "https://www.facebook.com/chicflowersFB",
+    "https://www.tiktok.com/@alona.chic",
+    "https://www.pinterest.com/chicflowers_",
+  ],
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://chicflowers.com/?s={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
 
 export default function RootLayout({ children }) {
   const canonicalUrl =
@@ -60,19 +124,14 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+
         <meta httpEquiv="pragma" content="no-cache" />
         <meta httpEquiv="expires" content="-1" />
         <meta httpEquiv="cache-control" content="no-cache" />
-        <meta
-          property="og:title"
-          content="CHIC Wedding Florals | San Diego's Best Florist"
-        />
-        <meta
-          property="og:description"
-          content="Elegant bouquets, centerpieces, and floral backdrops crafted for your perfect wedding day in San Diego."
-        />
-        <meta property="og:url" content={process.env.NEXT_PUBLIC_BASE_URL} />
-        <meta property="og:type" content="website" />
       </head>
       <body className={`antialiased ${nunitoSans.className}`}>
         <Setup />

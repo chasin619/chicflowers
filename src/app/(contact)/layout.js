@@ -8,9 +8,17 @@ import Script from "next/script";
 import { Nunito_Sans } from "next/font/google";
 
 export const metadata = {
-  title: "CHIC Flowers - Contact US",
+  title: "Chic Wedding Designer - Contact | San Diego Wedding Florist | Los Angelas Wedding Florist",
   description:
-    "CHIC in San Diego specializes in bespoke wedding floral designs, including bouquets, centerpieces, and backdrops, crafted to make your special day unforgettable",
+    "Chic in San Diego specializes in bespoke wedding floral designs, including bouquets, centerpieces, and backdrops, crafted to make your special day unforgettable.",
+  graphData: {
+    title: "Contact Chic Wedding Florals",
+    description:
+      "Reach out to us for personalized floral arrangements to make your wedding unforgettable.",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/contact`,
+    image: "https://yourwebsite.com/assets/images/contact-banner.jpg",
+    type: "article",
+  },
 };
 
 const nunitoSans = Nunito_Sans({
@@ -63,17 +71,6 @@ export default function RootLayout({ children }) {
         <meta httpEquiv="pragma" content="no-cache" />
         <meta httpEquiv="expires" content="-1" />
         <meta httpEquiv="cache-control" content="no-cache" />
-        <meta property="og:title" content="Contact CHIC Wedding Florals" />
-        <meta
-          property="og:description"
-          content="Reach out to us for personalized floral arrangements to make your wedding unforgettable."
-        />
-        <meta property="og:url" content="https://yourwebsite.com/contact" />
-        <meta
-          property="og:image"
-          content="https://yourwebsite.com/assets/images/contact-banner.jpg"
-        />
-        <meta property="og:type" content="article" />
       </head>
       <body className={`antialiased ${nunitoSans.className}`}>
         <Setup />
