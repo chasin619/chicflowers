@@ -41,7 +41,7 @@ const Hero = () => {
         className="bg-no-repeat bg-cover absolute inset-0 origin-top"
       />
       <div className="brand-name-wrapper first mt-[20vh] xs:mt-[17vh] sm:mt-24 lg:mt-16 aspect-[304/120] text-[10vw] h-[1em] z-30">
-        <h1 className="text-white text-center leading-none tracking-widest brand-name">
+        <h1 className="text-white text-[1em] text-center leading-none tracking-widest brand-name">
           CHIC
         </h1>
       </div>

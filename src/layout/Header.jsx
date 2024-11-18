@@ -75,7 +75,7 @@ const Header = () => {
         {!isHome && (
           <Link
             href="/"
-            className="text-white text-[1em] text-center leading-none font-italiana font-bold tracking-widest absolute top-0 left-0"
+            className="text-white text-[1em] text-center leading-none tracking-widest absolute top-0 left-0"
           >
             CHIC
           </Link>

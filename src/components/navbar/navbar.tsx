@@ -19,7 +19,7 @@ const Navbar: React.FC<NavbarTypes> = ({ onMenuClose }) => {
       <Link
         href="/"
         onClick={onMenuClose}
-        className="text-black lg:text-5xl mobile:text-4xl font-italiana font-bold tracking-widest absolute top-7 left-0 w-full text-center"
+        className="text-black lg:text-5xl mobile:text-4xl font-medium tracking-widest absolute top-7 left-0 w-full text-center"
       >
         CHIC
       </Link>
