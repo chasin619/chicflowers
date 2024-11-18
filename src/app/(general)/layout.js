@@ -8,14 +8,57 @@ import Script from "next/script";
 import { Nunito_Sans } from "next/font/google";
 
 export const metadata = {
-  title: "CHIC Flowers - Wedding Florist",
+  title: "CHIC Flowers - Luxury Wedding Florist in San Diego & Los Angeles",
   description:
-    "Chic in San Diego specializes in bespoke wedding floral designs, including bouquets, centerpieces, and backdrops, crafted to make your special day unforgettable",
+    "CHIC Flowers specializes in bespoke wedding floral designs, including elegant bouquets, high-end centerpieces, and exclusive backdrops, making your special day unforgettable in San Diego and Los Angeles.",
   openGraph: {
-    title: "Chic Wedding Florals | San Diego's Best Florist",
+    title: "CHIC Flowers | Luxury Wedding Florist San Diego & Los Angeles",
     description:
-      "Elegant bouquets, centerpieces, and floral backdrops crafted for your perfect wedding day in San Diego.",
+      "Discover CHIC Flowers, the top luxury wedding florist in San Diego and Los Angeles. We create elegant and high-end wedding flower arrangements tailored to your perfect day.",
     type: "website",
+    url: "https://chicflowers.com/",
+    images: [
+      {
+        url: "https://chicflowers.com/favicon.ico",
+        width: 1200,
+        height: 630,
+        alt: "Elegant wedding floral arrangements by CHIC Flowers",
+      },
+    ],
+    siteName: "CHIC Flowers",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CHIC Flowers - Luxury Wedding Florist in San Diego & Los Angeles",
+    description:
+      "CHIC Flowers specializes in bespoke wedding floral designs, including elegant bouquets, high-end centerpieces, and exclusive backdrops, making your special day unforgettable in San Diego and Los Angeles.",
+    images: ["https://chicflowers.com/twitter.png"],
+    creator: "@alona_chasin",
+  },
+  structuredData: {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "CHIC Flowers",
+    description:
+      "CHIC Flowers specializes in bespoke wedding floral designs, including elegant bouquets, high-end centerpieces, and exclusive backdrops, making your special day unforgettable in San Diego and Los Angeles.",
+    url: "https://yourwebsite.com/",
+    logo: "https://yourwebsite.com/images/logo.png",
+    image: "https://yourwebsite.com/images/home-og.jpg",
+    telephone: "+1-234-567-890",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "123 Floral Ave",
+      addressLocality: "San Diego",
+      addressRegion: "CA",
+      postalCode: "92101",
+      addressCountry: "US",
+    },
+    sameAs: [
+      "https://www.facebook.com/chicflowers",
+      "https://www.instagram.com/chicflowers",
+      "https://www.linkedin.com/company/chicflowers",
+      "https://twitter.com/chicflowers_sd",
+    ],
   },
 };
 
@@ -126,14 +169,6 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
-        <meta property="og:url" content="https://chicflowers.com" />
-        <meta
-          property="og:image"
-          content="https://chicflowers.com/favicon.ico"
-        />
-        <meta httpEquiv="pragma" content="no-cache" />
-        <meta httpEquiv="expires" content="-1" />
-        <meta httpEquiv="cache-control" content="no-cache" />
       </head>
       <body className={`antialiased ${nunitoSans.className}`}>
         <Setup />

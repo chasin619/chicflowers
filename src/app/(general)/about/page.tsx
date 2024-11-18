@@ -1,30 +1,42 @@
 import React from "react";
-import { Metadata } from "next";
 import { Accordion } from "@/components/accordion";
 import HeroSection from "@/ui/About/HeroSection";
 import StudioSection from "@/ui/About/StudioSection";
 import TeamSection from "@/ui/About/TeamSection";
 import { AboutAccordionData } from "@/utils/constants";
 
-export const metadata: Metadata = {
-  title: "Chic Flowers - About",
+export const metadata = {
+  title:
+    "About CHIC Flowers | Premier Luxury Wedding Florist in San Diego & Los Angeles",
   description:
-    "Explore The Chic Edge, a design and production house that combines creativity, empathy, and expertise. Learn more about our team, studio, and unique approach.",
+    "Learn about CHIC Flowers, your premier luxury wedding florist in San Diego and Los Angeles. Our exclusive floral designs and high-end arrangements ensure your wedding day is nothing short of spectacular.",
   openGraph: {
-    title: "Chic Flowers - About",
+    title:
+      "About CHIC Flowers | Premier Luxury Wedding Florist in San Diego & Los Angeles",
     description:
-      "Discover The Chic Edge, a uniquely positioned design and production house. Meet our talented team and explore what makes us stand out.",
-    url: `https://chicflowers.com/about`,
+      "Discover the passion and expertise behind CHIC Flowers. We specialize in luxury wedding floral designs and high-end flower arrangements that make your special day truly unforgettable.",
     type: "website",
+    url: "https://chicflowers.com/about",
+    images: [
+      {
+        url: "https://chicflowers.com/favicon.ico",
+        width: 1200,
+        height: 630,
+        alt: "About CHIC Flowers - Luxury Wedding Florist",
+      },
+    ],
+    siteName: "CHIC Flowers",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chic Flowers - About",
+    title:
+      "About CHIC Flowers | Premier Luxury Wedding Florist in San Diego & Los Angeles",
     description:
-      "Explore The Chic Edge, a design and production house that combines creativity, empathy, and expertise.",
+      "Learn about CHIC Flowers, your premier luxury wedding florist in San Diego and Los Angeles. Our exclusive floral designs and high-end arrangements ensure your wedding day is nothing short of spectacular.",
+    images: ["https://chicflowers.com/twitter.png"],
+    creator: "@alona_chasin",
   },
 };
-
 const About = () => {
   return (
     <div className="relative w-full mt-10 flex justify-center items-center flex-col">

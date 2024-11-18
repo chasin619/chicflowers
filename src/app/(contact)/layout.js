@@ -1,5 +1,4 @@
 import Header from "@/layout/Header";
-import Footer from "@/layout/Footer";
 import "../globals.css";
 
 import Setup from "../Setup";
@@ -8,16 +7,35 @@ import Script from "next/script";
 import { Nunito_Sans } from "next/font/google";
 
 export const metadata = {
-  title: "Chic Wedding Designer - Contact | San Diego Wedding Florist | Los Angelas Wedding Florist",
+  title:
+    "Contact CHIC Flowers | Luxury Wedding Florist San Diego & Los Angeles",
   description:
-    "Chic in San Diego specializes in bespoke wedding floral designs, including bouquets, centerpieces, and backdrops, crafted to make your special day unforgettable.",
-  graphData: {
-    title: "Contact Chic Wedding Florals",
+    "Get in touch with CHIC Flowers, the top luxury wedding florist in San Diego and Los Angeles. Let us create elegant and high-end wedding flower arrangements tailored to your dream wedding.",
+  openGraph: {
+    title:
+      "Contact CHIC Flowers | Luxury Wedding Florist San Diego & Los Angeles",
     description:
-      "Reach out to us for personalized floral arrangements to make your wedding unforgettable.",
-    url: `https://chicflowers.com/contact`,
-    image: "https://yourwebsite.com/assets/images/contact-banner.jpg",
-    type: "article",
+      "Reach out to CHIC Flowers for inquiries about our bespoke wedding floral designs. We are here to assist you in creating stunning flower arrangements for your special day in San Diego and Los Angeles.",
+    type: "website",
+    url: "https://chicflowers.com/contact",
+    images: [
+      {
+        url: "https://chicflowers.com/favicon.ico",
+        width: 1200,
+        height: 630,
+        alt: "Contact CHIC Flowers - Luxury Wedding Florist",
+      },
+    ],
+    siteName: "CHIC Flowers",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Contact CHIC Flowers | Luxury Wedding Florist San Diego & Los Angeles",
+    description:
+      "Get in touch with CHIC Flowers, the top luxury wedding florist in San Diego and Los Angeles. Let us create elegant and high-end wedding flower arrangements tailored to your dream wedding.",
+    images: ["https://chicflowers.com/twitter.png"],
+    creator: "@alona_chasin",
   },
 };
 
