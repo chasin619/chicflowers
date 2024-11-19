@@ -35,6 +35,7 @@ const Contact = () => {
   };
 
   const [formData, setFormData] = useState(INITIAL_DATA);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const updateFields = (sectionKey, fields) => {
     setFormData((prev) => ({
@@ -84,6 +85,7 @@ const Contact = () => {
   };
 
   const submitEventInquires = async () => {
+    setIsLoading(true);
     const response = await fetch("/api/contact", {
       method: "POST",
       headers: {
@@ -94,6 +96,7 @@ const Contact = () => {
 
     const data = await response.json();
     toast.success(data.message);
+    setIsLoading(false);
   };
 
   return (
@@ -116,8 +119,11 @@ const Contact = () => {
             </span>
             {isLastStep && validateFields(feilds) ? (
               <button
-                className="flex items-center justify-center px-5 py-2 rounded-3xl border text-black focus:outline-none hover:bg-gray-900 hover:text-white transition-colors duration-300"
+                className={`flex items-center justify-center px-5 py-2 rounded-3xl border text-black focus:outline-none hover:bg-gray-900 hover:text-white transition-colors duration-300 ${
+                  isLoading ? "opacity-15" : "opacity-100"
+                }`}
                 onClick={submitEventInquires}
+                disabled={isLoading}
               >
                 Submit
               </button>

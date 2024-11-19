@@ -5,6 +5,7 @@ import Setup from "../Setup";
 import Script from "next/script";
 
 import { Nunito_Sans } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title:
@@ -94,6 +95,7 @@ export default function RootLayout({ children }) {
         <Setup />
         <Header />
         {children}
+        <Toaster position="top-center" reverseOrder={false} />
       </body>
     </html>
   );
