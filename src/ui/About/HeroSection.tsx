@@ -17,10 +17,12 @@ const HeroSection = () => {
           The Story of Chic
         </h1>
         <p className="text-center mt-4 mb-8 lg:text-2xl md:text-xl mobile:text-lg font-medium lg:w-[60%] mobile:w-[90%]">
-          Authenticity is at the core of Chic Flowers. It’s what has made us a premier wedding florist in San Diego. 
-          Our clients and followers know we showcase the true artistry behind our beautiful floral arrangements. 
-          The story of Chic Flowers is rooted in dedication and passion, 
-          guiding us to become a trusted leader in San Diego's wedding industry.
+          Realness is deeply rooted in the European garden-inspired artistry of Chic Flowers. 
+          It’s this foundation that has established us as a premier wedding florist in San Diego. 
+          Our clients and followers recognize the timeless elegance and craftsmanship we bring 
+          to every arrangement, reflecting the rich traditions of European floral design. 
+          The story of Chic Flowers is one of passion and dedication, blossoming into a 
+          trusted leader in San Diego's wedding industry
         </p>
       </div>
     </div>
