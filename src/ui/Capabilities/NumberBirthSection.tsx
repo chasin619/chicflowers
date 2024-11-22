@@ -4,7 +4,7 @@ import React from "react";
 const NumberBirthSection = () => {
   const countingData = [
     { target: "1200", text: "Events in the books" },
-    { target: "40000", text: "Guest Experiences" },
+    { target: "120000", text: "Guest Experiences" },
     { target: "1000000", text: "Eyes reached online" },
   ];
 
