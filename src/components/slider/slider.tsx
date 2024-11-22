@@ -26,18 +26,19 @@ const Slider = () => {
     {
       upTitle: "Design Collaboration",
       upDescription:
-        "Chic takes a field trip to the venue where your event will come to life. Whether it’s nearby or far away, we explore the space to get fully acquainted, ensuring every detail is planned with precision and creativity.",
+        "Share your inspiration, and we’ll craft a design tailored to your vision. With your feedback, we’ll refine every detail until you’re completely satisfied. From there, all that’s left is to get excited for the unforgettable celebration ahead!",
       downTitle: "Site Visit",
       downDescription:
-        "With your initial interest comes a meeting with the team who will work on capturing your vision and making it happen. This is the time for dreaming, scheming, and sparking creativity.",
+        "Chic takes a field trip to the venue where your event will come to life. Whether it’s nearby or far away, we explore the space to get fully acquainted, ensuring every detail is planned with precision and creativity.",
     },
     {
-      upTitle: "We Learn About You",
+      upTitle: "Time to Relax",
       upDescription:
-        "In our initial discussion, we get to learn all the gorgeous details about you, your event, and your vision.",
-      downTitle: "You Learn About Us",
+        "While we handle all the details, you can savor every special moment leading up to your event. This is your time to unwind and enjoy the anticipation.",
+      
+      downTitle: "Time to Execute",
       downDescription:
-        "With your initial interest comes a meeting with the team who will work on capturing your vision and making it happen. This is the time for dreaming, scheming, and sparking creativity.",
+        "Behind the scenes, we bring the energy, focus, and determination to make your event a reality. We’ll manage every moving piece of production, ensuring the final look is seamless, polished, and effortlessly stunning.",
     },
   ];
 
