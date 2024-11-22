@@ -8,12 +8,14 @@ const RecordSection = () => {
         In Record Time
       </h1>
       <p className="lg:text-xl mobile:text-base font-medium text-left mt-2 lg:w-[900px] mobile:w-90">
-        Nobody does a sprint better than Chic. We can pull off in days what it
-        takes others months to accomplish, and we hardly break a sweat doing it.
-        Since the beginning, we’ve set the tone for fast-paced work that keeps
-        up with a fast-paced world, with no sacrifice to style or scale. It’s a
-        muscle we’ve toned and tightened to perfection, and we’re always ready
-        to flex.
+        At Chic, we bring together design mastery and precision engineering to create stunning floral 
+        installations and wedding decor that others only dream of. As leaders in wedding flowers in San Diego, 
+        we deliver intricate, large-scale designs in record time—turning your vision into reality in days rather than months.
+        From concept to completion, our team combines innovative design with flawless execution, ensuring every detail is both
+        structurally sound and visually breathtaking. We’ve perfected the art of balancing creativity with technical expertise,
+        making the extraordinary look effortless.
+        No matter your timeline, our expertly engineered process ensures your dream wedding flowers and decor are brought to life 
+        with unmatched speed and perfection, right here in San Diego.
       </p>
       <p className="text-[18px] font-medium text-left lg:mb-40 lg:w-[900px] mobile:mb-20 mobile:w-90">
         Whatever timeline you’re on, this is our process.
