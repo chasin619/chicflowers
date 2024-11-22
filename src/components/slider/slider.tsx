@@ -16,17 +16,17 @@ const Slider = () => {
 
   const data = [
     {
-      upTitle: "We Learn About You",
+      upTitle: "Getting to Know Us",
       upDescription:
-        "In our initial discussion, we get to learn all the gorgeous details about you, your event, and your vision.",
-      downTitle: "You Learn About Us",
+        "Your journey begins with a meeting where our team collaborates to capture your vision and turn it into reality. This is your time to dream, plan, and spark inspiration as we work together to bring your ideas to life.",
+      downTitle: "Getting to Know You",
       downDescription:
-        "With your initial interest comes a meeting with the team who will work on capturing your vision and making it happen. This is the time for dreaming, scheming, and sparking creativity.",
+        "During our initial discussion, we dive into all the beautiful details about you, your event, and your vision.",
     },
     {
-      upTitle: "We Learn About You",
+      upTitle: "Site Visit",
       upDescription:
-        "In our initial discussion, we get to learn all the gorgeous details about you, your event, and your vision.",
+        "Chic takes a field trip to the venue where your event will come to life. Whether it’s nearby or far away, we explore the space to get fully acquainted, ensuring every detail is planned with precision and creativity.",
       downTitle: "You Learn About Us",
       downDescription:
         "With your initial interest comes a meeting with the team who will work on capturing your vision and making it happen. This is the time for dreaming, scheming, and sparking creativity.",
