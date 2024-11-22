@@ -24,10 +24,10 @@ const Slider = () => {
         "During our initial discussion, we dive into all the beautiful details about you, your event, and your vision.",
     },
     {
-      upTitle: "Site Visit",
+      upTitle: "Design Collaboration",
       upDescription:
         "Chic takes a field trip to the venue where your event will come to life. Whether it’s nearby or far away, we explore the space to get fully acquainted, ensuring every detail is planned with precision and creativity.",
-      downTitle: "You Learn About Us",
+      downTitle: "Site Visit",
       downDescription:
         "With your initial interest comes a meeting with the team who will work on capturing your vision and making it happen. This is the time for dreaming, scheming, and sparking creativity.",
     },
