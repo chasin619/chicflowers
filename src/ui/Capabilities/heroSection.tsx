@@ -107,11 +107,11 @@ export default function Home() {
         style={{ opacity: paragraphOpacity, y: paragraphY }}
       >
         <motion.p className="text-black text-center font-[FaktNormal] text-[30px] m-auto w-1/2 ">
-          No matter what you want or when you want it, Chic is ALL IN. Over the
-          years, we’ve become masters of making dreams into realities – and
-          pulling off the magic in record time. Our team shares an ethos of
-          over-delivering and exceeding expectations, always working fast but
-          never sacrificing quality.
+         No matter what you envision or when you need it, Chic is fully committed. 
+          Over the years, we've honed the art of turning dreams into realities – 
+          and making it happen in record time. Our team thrives on exceeding expectations,
+          delivering more than promised, and working efficiently without ever compromising on quality. 
+          We ARE IN IT TO WIN IT. 
         </motion.p>
       </motion.div>
     </div>
