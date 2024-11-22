@@ -46,11 +46,11 @@ const About = () => {
           The Chic Edge
         </h1>
         <p className="text-center mt-4 mb-8 lg:text-2xl md:text-xl mobile:text-lg font-medium lg:w-[60%] mobile:w-[100%]">
-          We are an empathic, wildly talented, and uniquely positioned design
-          and production house. Backed by substantive knowledge and an easy
-          approach, working with us unlocks a world of benefits at your
-          disposal. Explore below the characteristics that separate Chic from
-          the rest.
+          As a leading event designer in San Diego, Chic is a highly skilled, empathetic,
+          and strategically positioned design and production studio. With extensive expertise 
+          and a relaxed, approachable style, collaborating with us unlocks a range of benefits 
+          tailored to your needs. Explore the unique qualities that make Chic stand out from other
+          top event designers and creative production houses.
         </p>
         <Accordion data={AboutAccordionData} />
         <TeamSection />
