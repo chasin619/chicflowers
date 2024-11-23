@@ -5,7 +5,7 @@ const BlogCard = ({ title, description, author, date, image }) => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md max-w-lg mx-auto">
       <div className="relative mb-4">
-        <div className="h-60 w-full mx-auto flex items-center justify-center rounded-full bg-white">
+        <div className="h-60 w-full mx-auto flex items-center justify-center rounded-md bg-white overflow-hidden">
           <Image
             src={image}
             width={600}
