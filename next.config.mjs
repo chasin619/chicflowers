@@ -9,6 +9,14 @@ const nextConfig = {
   },
   images: {
     domains: ["chicflowers.s3.amazonaws.com"],
+    // Remove when integrate the Blog API's
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "picsum.photos",
+        pathname: "**",
+      },
+    ],
   },
   async headers() {
     return [
