@@ -131,4 +131,8 @@ export const navRoutes = [
     href: "/contact",
     name: "Contact Us",
   },
+  {
+    href: "/blog",
+    name: "Blog",
+  },
 ];
