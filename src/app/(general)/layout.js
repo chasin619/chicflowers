@@ -6,6 +6,7 @@ import Setup from "../Setup";
 import Script from "next/script";
 
 import { Nunito_Sans } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "CHIC Flowers - Luxury Wedding Florist in San Diego & Los Angeles",
@@ -175,6 +176,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <Toaster position="top-center" reverseOrder={false} />
       </body>
     </html>
   );
