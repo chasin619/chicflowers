@@ -14,7 +14,7 @@ export async function POST(request: Request) {
   });
 
   const mailOptions = {
-    from: `${personalInfo.fullName} <${personalInfo.email}>`,
+    from: `${personalInfo.fullName}`,
     to: `chicflowersonline@gmail.com`,
     subject: "Event Inquiry Form Submission",
     html: `
