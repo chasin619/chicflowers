@@ -14,7 +14,7 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ post }) => {
   return (
-    <div className="flex items-center justify-center lg:px-16 px-7 py-32 mx-auto">
+    <div className="flex items-center justify-center gap-16 lg:px-16 px-7 py-32 mx-auto">
       <div className="w-[45%] mt-20 text-center md:text-left">
         <h1 className="text-5xl font-semibold mb-4">{post.title}</h1>
         <p className="text-base font-semibold text-gray-500 mb-4 flex justify-between gap-10 max-w-96">
@@ -22,7 +22,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ post }) => {
         </p>
       </div>
 
-      <div className="w-[50%] h-[520px] mt-12 md:mt-0">
+      <div className="w-[55%] h-[520px] mt-12 md:mt-0">
         {post.image && (
           <Image
             src={post.image}
