@@ -26,8 +26,8 @@ const ContentSection: React.FC<ContentSectionProps> = ({
     toast.success("Link Copied");
   };
   return (
-    <div className="lg:px-16 px-7 mt-12 flex gap-48">
-      <div>
+    <div className="lg:px-16 px-4 lg:mt-12 mt-4 flex gap-48">
+      <div className="hidden md:block">
         <p className="text-xl text-black font-semibold">Share</p>
         <div className="flex flex-col items-start gap-4 mt-6">
           <div className="flex items-center gap-3">
@@ -72,7 +72,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
         </div>
       </div>
       <div
-        className="text-lg text-gray-700 leading-relaxed max-w-[75%]"
+        className="md:text-lg text-base text-gray-700 leading-relaxed lg:max-w-[75%] max-w-full"
         dangerouslySetInnerHTML={{ __html: htmlContent }}
       ></div>
     </div>
