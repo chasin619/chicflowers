@@ -150,7 +150,7 @@ export const blogData = [
       "Learn the pros and cons of studying abroad and see how it can enrich your education, expand your horizons, and ignite new adventures...",
     author: "by Interstride",
     date: "November 18, 2024",
-    image: "https://picsum.photos/200/200?random=1",
+    image: "https://picsum.photos/2000/2000?random=1",
   },
   {
     title: "The Benefits of Learning a New Language",
@@ -159,7 +159,7 @@ export const blogData = [
       "Discover how learning a new language can boost your career, improve cognitive abilities, and connect you with new cultures.",
     author: "by Language Experts",
     date: "November 12, 2024",
-    image: "https://picsum.photos/200/200?random=2",
+    image: "https://picsum.photos/2000/2000?random=2",
   },
   {
     title: "Top 10 Travel Destinations for Students",
@@ -168,7 +168,7 @@ export const blogData = [
       "Explore the top travel destinations for students that offer affordability, fun activities, and unforgettable experiences.",
     author: "by Wanderlust",
     date: "November 5, 2024",
-    image: "https://picsum.photos/200/200?random=3",
+    image: "https://picsum.photos/2000/2000?random=3",
   },
   {
     title: "How to Balance Studies and Work",
@@ -177,7 +177,7 @@ export const blogData = [
       "Learn practical tips to effectively manage your time and excel at both your studies and part-time job.",
     author: "by CareerCoach",
     date: "October 30, 2024",
-    image: "https://picsum.photos/200/200?random=4",
+    image: "https://picsum.photos/2000/2000?random=4",
   },
   {
     title: "Scholarships for International Students",
@@ -186,7 +186,7 @@ export const blogData = [
       "Find out about the best scholarships available for international students and how to apply for them.",
     author: "by Scholarship Finder",
     date: "October 20, 2024",
-    image: "https://picsum.photos/200/200?random=5",
+    image: "https://picsum.photos/2000/2000?random=5",
   },
   {
     title: "Networking Tips for College Students",
@@ -195,7 +195,7 @@ export const blogData = [
       "Learn how to build a strong network during college that will benefit your future career and personal growth.",
     author: "by Networking Pro",
     date: "October 10, 2024",
-    image: "https://picsum.photos/200/200?random=6",
+    image: "https://picsum.photos/2000/2000?random=6",
   },
   {
     title: "Understanding Cultural Differences",
@@ -204,7 +204,7 @@ export const blogData = [
       "Discover how understanding and respecting cultural differences can enhance your personal and professional relationships.",
     author: "by Global Citizens",
     date: "October 1, 2024",
-    image: "https://picsum.photos/200/200?random=7",
+    image: "https://picsum.photos/2000/2000?random=7",
   },
   {
     title: "How to Save Money While Studying Abroad",
@@ -213,6 +213,6 @@ export const blogData = [
       "Explore practical tips on budgeting, finding discounts, and saving money as an international student.",
     author: "by Finance Gurus",
     date: "September 25, 2024",
-    image: "https://picsum.photos/200/200?random=8",
+    image: "https://picsum.photos/2000/2000?random=8",
   },
 ];
