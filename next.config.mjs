@@ -8,8 +8,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    domains: ["chicflowers.s3.amazonaws.com"],
-    // Remove when integrate the Blog API's
+    domains: ["chicflowers.s3.amazonaws.com", "velour-web.s3.amazonaws.com"],
     remotePatterns: [
       {
         protocol: "https",
