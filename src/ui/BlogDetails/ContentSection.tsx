@@ -14,13 +14,7 @@ interface ContentSectionProps {
   htmlContent: string;
 }
 
-const ContentSection: React.FC<ContentSectionProps> = ({
-  htmlContent = `Planning a wedding can be both exciting and overwhelming. From selecting the perfect venue to choosing the floral arrangements, there are countless details that go into making your special day unforgettable. One of the most important aspects of a wedding is creating an atmosphere that reflects your personality as a couple. Whether it's a small intimate gathering or a large celebration with family and friends, every detail matters. Let us help you bring your vision to life with our personalized wedding services that cater to your unique style and preferences.
-
-  Our team understands that each wedding is unique, and we pride ourselves on offering bespoke solutions that match your dreams. From the grand entrance to the final dance, we are committed to making every moment extraordinary. We collaborate closely with you to ensure that everything, from the music selection to the color scheme, aligns perfectly with your preferences. Our experienced coordinators are well-versed in handling all aspects of wedding planning, including vendor management, timeline creation, and on-the-day coordination, so you can relax and enjoy every moment of your special day.
-  
-  Imagine walking down the aisle surrounded by breathtaking floral arrangements, the scent of fresh blooms filling the air. Picture your guests seated comfortably in a beautifully decorated venue that captures the essence of your love story. We specialize in turning these dreams into reality, taking care of even the smallest details to create an unforgettable experience for you and your guests. Our commitment to excellence means that you can trust us to handle all the logistics, allowing you to focus on celebrating your love without any stress or worry. With our help, your wedding will be a day that you and your loved ones will cherish forever.`,
-}) => {
+const ContentSection: React.FC<ContentSectionProps> = ({ htmlContent }) => {
   const handleCopy = () => {
     navigator.clipboard.writeText(window.location.href);
     toast.success("Link Copied");

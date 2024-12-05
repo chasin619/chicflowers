@@ -2,13 +2,14 @@
 
 import React, { useEffect } from "react";
 import { motion, useSpring } from "framer-motion";
-import { portfolioData } from "@/data/home";
 import Link from "next/link";
 import Image from "next/image";
+import useHomeStore from "@/store/home";
 
 const CURSOR_SIZE = 150;
 
 const Portfolio = () => {
+  const { portfolios } = useHomeStore();
   const spring = {
     stiffness: 150,
     damping: 15,
@@ -32,13 +33,14 @@ const Portfolio = () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+  console.log(portfolios);
 
   return (
     <div
       id="portfolio"
       className="grid xs:grid-cols-2 md:grid-cols-3 p-[3.333vw] gap-[3.333vw]"
     >
-      {portfolioData.map((item, i) => (
+      {portfolios.map((item, i) => (
         <Link
           key={i}
           href={`/events/${i + 1}`}
@@ -51,7 +53,7 @@ const Portfolio = () => {
             <div className="absolute inset-0 bg-black/50" />
 
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-italiana text-[3vw] font-bold mix-blend-screen text-center !leading-none w-[90%] tracking-wide">
-              {item.venue}
+              {item.title}
             </div>
 
             <motion.div
@@ -66,7 +68,7 @@ const Portfolio = () => {
           </div>
 
           <Image
-            src={item.images[0].src}
+            src={item.images[0]}
             alt="Portfolio Images"
             loading="lazy"
             objectFit="cover"

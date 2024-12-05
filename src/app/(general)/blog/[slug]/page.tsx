@@ -1,17 +1,17 @@
-import { blogData } from "@/utils/constants";
+"use client";
 
 import HeroSection from "@/ui/BlogDetails/HeroSecion";
 import ContentSection from "@/ui/BlogDetails/ContentSection";
+import useHomeStore from "@/store/home";
 
-export async function generateStaticParams() {
-  return blogData.map((post) => ({
-    slug: post.slug,
-  }));
-}
-
-const BlogDetails = async ({ params }: { params: { slug: string } }) => {
+const BlogDetails = ({ params }: { params: { slug: string } }) => {
+  const { blogs } = useHomeStore();
   const slug = params.slug;
-  const post = blogData.find((post) => post.slug === slug);
+  const post = blogs.find((post) => post.slug === slug);
+
+  if (!post) {
+    return <div>Blog post not found.</div>;
+  }
 
   return (
     <div>

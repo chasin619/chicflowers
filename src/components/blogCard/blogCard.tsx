@@ -1,22 +1,23 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { formatDate } from "@/utils/helpers";
 
 interface BlogCardProps {
   title: string;
   slug: string;
-  description: string;
+  content: string;
   author: string;
-  date: string;
+  createdAt: string;
   image: string;
 }
 
 const BlogCard: React.FC<BlogCardProps> = ({
   title,
   slug,
-  description,
+  content,
   author,
-  date,
+  createdAt,
   image,
 }) => {
   return (
@@ -34,11 +35,18 @@ const BlogCard: React.FC<BlogCardProps> = ({
             />
           </div>
         </div>
-        <h2 className="md:text-2xl text-xl font-bold text-gray-800 mb-2">{title}</h2>
-        <p className="text-gray-600 text-sm md:text-base mb-4">{description}</p>
+        <h2 className="md:text-2xl text-xl font-bold text-gray-800 mb-2">
+          {title}
+        </h2>
+        <span
+          className="text-gray-600 text-sm md:text-base mb-4"
+          dangerouslySetInnerHTML={{
+            __html: content.substring(0, 100) + "...",
+          }}
+        />
         <div className="text-gray-500 text-sm flex justify-between items-center mt-12">
           <p className="mb-1">{author}</p>
-          <p>{date}</p>
+          <p>{formatDate(createdAt)}</p>
         </div>
       </div>
     </Link>
