@@ -28,7 +28,7 @@ const useHomeStore = create<HomeStoreState>((set, get) => ({
   },
   getAllBlogs: async () => {
     try {
-      const response = await axios.get(`${BASE_URL}/api/blogs`);
+      const response = await axios.get(`${BASE_URL}/api/blog/get-blogs`);
       set({ blogs: response.data.blogs });
     } catch (error: any) {
       console.log(error.message);
@@ -36,7 +36,7 @@ const useHomeStore = create<HomeStoreState>((set, get) => ({
   },
   getReviews: async () => {
     try {
-      const response = await axios.get(`${BASE_URL}/api/reviews`);
+      const response = await axios.get(`${BASE_URL}/api/review/get-reviews`);
       set({ reviews: response.data.reviews });
     } catch (error: any) {
       console.log(error.message);
@@ -44,7 +44,7 @@ const useHomeStore = create<HomeStoreState>((set, get) => ({
   },
   getPortfolios: async () => {
     try {
-      const response = await axios.get(`${BASE_URL}/api/portfolios`);
+      const response = await axios.get(`${BASE_URL}/api/portfolio/get-portfolios`);
       set({ portfolios: response.data.portfolios });
     } catch (error: any) {
       console.log(error.message);
