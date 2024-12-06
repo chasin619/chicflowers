@@ -11,7 +11,7 @@ export interface TeamMember {
   image: string | null;
 }
 
-export const BASE_URL = "https://admin-chicflowers-eight.vercel.app";
+export const BASE_URL = "https://velourweb-admin.vercel.app";
 
 export const CapabilityAccordionData: AccordionItem[] = [
   {
