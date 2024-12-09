@@ -46,7 +46,7 @@ const Accordion = ({ data }: { data: AccordionItem[] }) => {
                 </ol>
               </div>
               {images && (
-                <div className="flex justify-center items-center mobile:flex-col gap-6 mt-10 lg:flex-row">
+                <div className="flex justify-center items-center mobile:flex-col gap-6 mt-10 lg:flex-row" key={index}>
                   {images.map((url) => (
                     <Image
                       src={url}
