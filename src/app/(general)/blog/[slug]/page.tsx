@@ -1,16 +1,23 @@
 "use client";
+import { useEffect } from "react";
 
 import HeroSection from "@/ui/BlogDetails/HeroSecion";
 import ContentSection from "@/ui/BlogDetails/ContentSection";
 import useHomeStore from "@/store/home";
 
 const BlogDetails = ({ params }: { params: { slug: string } }) => {
-  const { blogs } = useHomeStore();
+  const { blogs, getAllBlogs } = useHomeStore();
   const slug = params.slug;
   const post = blogs.find((post) => post.slug === slug);
 
+  useEffect(() => {
+    if (!post) {
+      getAllBlogs();
+    }
+  }, []);
+
   if (!post) {
-    return <div>Blog post not found.</div>;
+    return <></>;
   }
 
   return (
