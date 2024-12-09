@@ -10,11 +10,12 @@ const GallerySection = () => {
               src="/g-1.png"
               alt="Event Image 1"
               width={380}
-              height={380}
-              className="mobile:hidden z-10 lg:top-[-250px] lg:left-20 mobile:top-32 mobile:left-10 absolute rounded-3xl lg:w-96 mobile:w-48 h-[500px] object-cover"
+              height={200}
+              unoptimized
+              className="mobile:hidden lg:flex z-10 absolute top-[-320px] left-[115px] rounded-3xl h-[550px] object-cover"
             />
             <Image
-              src="/studio-3.jpeg"
+              src="/studio-3.webp"
               alt="Event Image 2"
               width={300}
               height={300}
@@ -29,35 +30,36 @@ const GallerySection = () => {
             />
             <Image
               src="/g-4.webp"
-              alt="Event Image 3"
+              alt="Event Image 44"
               width={320}
               height={320}
               className="mobile:hidden lg:flex z-10 absolute top-[-160px] left-[-350px] rounded-3xl"
             />
             <Image
               src="/g-5.jpeg"
-              alt="Event Image 1"
+              alt="Event Image 5"
               width={450}
               height={450}
               className="mobile:hidden lg:flex z-10 bottom-[-690px] left-[-280px] absolute rounded-3xl h-[550px]"
             />
             <Image
               src="/g-6.jpg"
-              alt="Event Image 2"
+              alt="Event Image 6"
               width={300}
               height={300}
-              className="mobile:hidden z-10 absolute lg:bottom-[-500px] mobile:bottom-[-210px] lg:right-[600px] rounded-3xl lg:w-[400px] mobile:w-48 h-[500px] object-cover"
+              unoptimized
+              className="mobile:hidden lg:flex z-10 bottom-[-690px] left-[320px] absolute rounded-3xl w-96 h-[550px] object-cover"
             />
             <Image
               src="/g-7.jpg"
-              alt="Event Image 3"
+              alt="Event Image 7"
               width={300}
               height={250}
               className="mobile:hidden lg:flex z-10 absolute bottom-[-590px] right-[160px] rounded-3xl h-[450px]"
             />
             <Image
               src="/g-8.jpeg"
-              alt="Event Image 3"
+              alt="Event Image 8"
               width={350}
               height={350}
               className="mobile:hidden lg:flex z-10 absolute bottom-[-490px] right-[-300px] rounded-3xl"
