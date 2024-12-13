@@ -29,9 +29,7 @@ const Contact = () => {
     },
     media: { description: "", visuals: "" },
     additionalInfo: {
-      contactType: "",
       hearAbout: "",
-      contact: "",
     },
   };
 

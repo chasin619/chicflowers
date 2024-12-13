@@ -29,28 +29,6 @@ const ContactPreferencesForm = ({ data, updateFields, personalInfo }) => {
 
   return (
     <div className="w-full mobile:px-8 lg:px-16">
-      <h2 className="text-xl md:text-2xl text-gray-900 mb-3 font-semibold">
-        How should we get in touch? *
-      </h2>
-
-      <Select
-        types={["EMAIL", "PHONE", "TEXT"]}
-        value={data.contactType}
-        onTypeSelect={(type) => handleSelect("contactType", type)}
-      />
-      <div className="mt-6">
-        {data.contactType[0] === "TEXT" && (
-          <Input
-            value={data.contact}
-            label={data.contactType}
-            onChange={handleInputChange}
-            name={"contact"}
-            placeholder={`Enter your ${data.contactType} number`}
-            required
-          />
-        )}
-      </div>
-
       <h2 className="text-xl md:text-2xl text-gray-900 font-semibold mt-8">
         {`Let's Socialize`}
       </h2>
