@@ -1,11 +1,21 @@
+import React from "react";
 import { Input } from "@/components/input";
-import { Select } from "@/components/select";
-import React, { useState } from "react";
 
 const EventInfoForm = ({ data, updateFields }) => {
-  const [selectedType, setSelectedType] = useState<any>(data.extraService);
 
   const FIELDS = [
+    {
+      name: "venue",
+      label: "VENUE",
+      required: true,
+      value: data.venue,
+    },
+    {
+      name: "eventPlanner",
+      label: "EVENT PLANNER",
+      required: true,
+      value: data.eventPlanner,
+    },
     {
       name: "guests",
       label: "NUMBER OF GUESTS",
@@ -28,39 +38,8 @@ const EventInfoForm = ({ data, updateFields }) => {
     },
   ];
 
-  const handleSelect = (type) => {
-    if (type) {
-      setSelectedType(type);
-      updateFields("financialInfo", { extraService: type });
-    }
-  };
-
   return (
     <div className="w-full mobile:px-8 lg:px-16">
-      <h2 className="text-xl md:text-2xl text-gray-900 mb-3 font-semibold">
-        Do you have any of these details nailed down?
-      </h2>
-      <Select
-        value={selectedType}
-        types={[
-          "VENUE",
-          "START TIME",
-          "EVENT PLANNER",
-          "ENTERTAINMENT",
-          "PHOTOGRAPHY",
-          "CATERER",
-        ]}
-        onTypeSelect={handleSelect}
-        multiple
-      />
-      <div className="flex justify-center items-center flex-col gap-4 mt-10">
-        {selectedType && selectedType?.map((field) => {
-          return (
-            <Input name={field} label={field} placeholder="Type something" />
-          );
-        })}
-      </div>
-
       <form className="space-y-8 mt-10">
         <div className="space-y-8">
           {FIELDS.map((field, index) => (

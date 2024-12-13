@@ -1,15 +1,30 @@
+import React from "react";
 import { Input } from "@/components/input";
 import { Select } from "@/components/select";
-import React from "react";
 
-const ContactPreferencesForm = ({ data, updateFields }) => {
+const ContactPreferencesForm = ({ data, updateFields, personalInfo }) => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     updateFields("additionalInfo", { [name]: value });
   };
 
-  const handleSelect = (name, type) => {
+  const handleSelect = (name: string, type: any) => {
+    const contactType = type[0];
     updateFields("additionalInfo", { [name]: type });
+
+    switch (contactType) {
+      case "EMAIL":
+        updateFields("additionalInfo", { contact: personalInfo.email });
+        break;
+
+      case "PHONE":
+        updateFields("additionalInfo", { contact: personalInfo.phoneNo });
+        break;
+
+      default:
+        updateFields("additionalInfo", { contact: "" });
+        break;
+    }
   };
 
   return (
@@ -19,12 +34,12 @@ const ContactPreferencesForm = ({ data, updateFields }) => {
       </h2>
 
       <Select
-        types={["EMAIL", "PHONE", "TEXT", "WHATSAPP"]}
+        types={["EMAIL", "PHONE", "TEXT"]}
         value={data.contactType}
         onTypeSelect={(type) => handleSelect("contactType", type)}
       />
       <div className="mt-6">
-        {data.contactType && (
+        {data.contactType[0] === "TEXT" && (
           <Input
             value={data.contact}
             label={data.contactType}
@@ -37,7 +52,7 @@ const ContactPreferencesForm = ({ data, updateFields }) => {
       </div>
 
       <h2 className="text-xl md:text-2xl text-gray-900 font-semibold mt-8">
-        Let's Socialize
+        {`Let's Socialize`}
       </h2>
       <p className="my-2">
         Feel free to share your socials so we can get to know you better.
@@ -58,16 +73,6 @@ const ContactPreferencesForm = ({ data, updateFields }) => {
           placeholder="Enter your TikTok handle"
         />
       </div>
-
-      <h2 className="text-xl md:text-2xl text-gray-900 mb-3 font-semibold mt-8">
-        Can we share photos from your event in the media? *
-      </h2>
-      <Select
-        types={["YES", "DECOR PHOTOS ONLY", "LET'S DISCUSS", "NO"]}
-        value={data.sharePicture}
-        onTypeSelect={(type) => handleSelect("sharePicture", type)}
-      />
-
       <h2 className="text-xl md:text-2xl text-gray-900 mb-3 font-semibold mt-8">
         How did you hear about us? *
       </h2>

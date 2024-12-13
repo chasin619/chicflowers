@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 "use client";
 import DetailSection from "@/ui/Contact/DetailSection";
 import React, { useState } from "react";
@@ -14,21 +15,21 @@ const Contact = () => {
   const INITIAL_DATA = {
     personalInfo: {
       fullName: "",
-      location: "",
+      phoneNo: "",
       email: "",
       eventDate: "",
       eventType: "",
     },
     financialInfo: {
+      venue: "",
+      eventPlanner: "",
       guests: "",
       weddingInvestment: "",
       decorInvestment: "",
-      extraService: "",
     },
     media: { description: "", visuals: "" },
     additionalInfo: {
       contactType: "",
-      sharePicture: "",
       hearAbout: "",
       contact: "",
     },
@@ -57,6 +58,7 @@ const Contact = () => {
       <EventVisionForm data={formData.media} updateFields={updateFields} />,
       <SocailizeForm
         data={formData.additionalInfo}
+        personalInfo={formData.personalInfo}
         updateFields={updateFields}
       />,
     ]);

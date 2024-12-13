@@ -3,7 +3,9 @@ import { Select } from "@/components/select";
 import React, { useState } from "react";
 
 const UserForm = ({ data, updateFields }) => {
-  const [selectedType, setSelectedType] = useState<string | null>(data.eventType || null);
+  const [selectedType, setSelectedType] = useState<string | null>(
+    data.eventType || null
+  );
 
   const FEILDS = [
     {
@@ -14,11 +16,11 @@ const UserForm = ({ data, updateFields }) => {
       value: data.fullName,
     },
     {
-      name: "location",
-      label: "WHERE ARE YOU BASED?",
+      name: "phoneNo",
+      label: "PHONE NUMBER",
       placeholder: "Type something",
       required: true,
-      value: data.location,
+      value: data.phoneNo,
     },
     {
       name: "email",
@@ -39,7 +41,7 @@ const UserForm = ({ data, updateFields }) => {
   return (
     <div className="w-full mobile:px-8 lg:px-16">
       <h2 className="text-2xl md:text-3xl text-gray-900 mb-6 font-semibold">
-        Let's get to know each other
+        {`Let's get to know each other`}
       </h2>
 
       <form className="space-y-8">
@@ -66,7 +68,7 @@ const UserForm = ({ data, updateFields }) => {
         </h2>
 
         <Input
-          label="EVENT DATE OR TIMELINE"
+          label="EVENT DATE"
           placeholder="Type something"
           name="eventDate"
           value={data.eventDate}
