@@ -3,14 +3,14 @@ import Page from ".";
 
 export const metadata = {
   title:
-    "Our Capabilities | Exclusive Wedding Floral Designs San Diego & Los Angeles",
+    "Capabititis page - Our Services: Event Design, Wedding flowers, Event Planning",
   description:
-    "Explore the capabilities of CHIC Flowers, offering exclusive wedding floral designs and high-end flower arrangements in San Diego and Los Angeles. We bring your wedding vision to life with elegance.",
+    "CHIC Flowers offers event design, stunning wedding florals, and expert event planning to create luxurious, unforgettable celebrations tailored to you.",
   openGraph: {
     title:
-      "Our Capabilities | Exclusive Wedding Floral Designs San Diego & Los Angeles",
+      "Capabititis page - Our Services: Event Design, Wedding flowers, Event Planning",
     description:
-      "Discover the wide range of services offered by CHIC Flowers, including bespoke bouquets, luxurious centerpieces, and stunning floral backdrops for weddings in San Diego and Los Angeles.",
+      "CHIC Flowers offers event design, stunning wedding florals, and expert event planning to create luxurious, unforgettable celebrations tailored to you.",
     type: "website",
     url: "https://chicflowers.com/capabilities",
     images: [
@@ -26,9 +26,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Our Capabilities | Exclusive Wedding Floral Designs San Diego & Los Angeles",
+      "Capabititis page - Our Services: Event Design, Wedding flowers, Event Planning",
     description:
-      "Explore the capabilities of CHIC Flowers, offering exclusive wedding floral designs and high-end flower arrangements in San Diego and Los Angeles. We bring your wedding vision to life with elegance.",
+      "CHIC Flowers offers event design, stunning wedding florals, and expert event planning to create luxurious, unforgettable celebrations tailored to you.",
     images: ["https://chicflowers.com/twitter.png"],
     creator: "@alona_chasin",
   },

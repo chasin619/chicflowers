@@ -7,14 +7,14 @@ import { AboutAccordionData } from "@/utils/constants";
 
 export const metadata = {
   title:
-    "About CHIC Flowers | Premier Luxury Wedding Florist in San Diego & Los Angeles",
+    "CHIC Flowers: Luxury Event & Wedding Floral Design Experts",
   description:
     "Learn about CHIC Flowers, your premier luxury wedding florist in San Diego and Los Angeles. Our exclusive floral designs and high-end arrangements ensure your wedding day is nothing short of spectacular.",
   openGraph: {
     title:
-      "About CHIC Flowers | Premier Luxury Wedding Florist in San Diego & Los Angeles",
+      "CHIC Flowers: Luxury Event & Wedding Floral Design Experts",
     description:
-      "Discover the passion and expertise behind CHIC Flowers. We specialize in luxury wedding floral designs and high-end flower arrangements that make your special day truly unforgettable.",
+      "Learn about CHIC Flowers, your premier luxury wedding florist in San Diego and Los Angeles. Our exclusive floral designs and high-end arrangements ensure your wedding day is nothing short of spectacular.",
     type: "website",
     url: "https://chicflowers.com/about",
     images: [
@@ -30,7 +30,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "About CHIC Flowers | Premier Luxury Wedding Florist in San Diego & Los Angeles",
+      "CHIC Flowers: Luxury Event & Wedding Floral Design Experts",
     description:
       "Learn about CHIC Flowers, your premier luxury wedding florist in San Diego and Los Angeles. Our exclusive floral designs and high-end arrangements ensure your wedding day is nothing short of spectacular.",
     images: ["https://chicflowers.com/twitter.png"],

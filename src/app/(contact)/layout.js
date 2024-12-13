@@ -9,14 +9,14 @@ import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title:
-    "Contact CHIC Flowers | Luxury Wedding Florist San Diego & Los Angeles",
+    "Contact CHIC Flowers: Let's Create Your Dream Event",
   description:
-    "Get in touch with CHIC Flowers, the top luxury wedding florist in San Diego and Los Angeles. Let us create elegant and high-end wedding flower arrangements tailored to your dream wedding.",
+    "Get in touch with CHIC Flowers for luxury wedding and event design services. We’re here to help you bring your vision to life in San Diego and LA.",
   openGraph: {
     title:
-      "Contact CHIC Flowers | Luxury Wedding Florist San Diego & Los Angeles",
+      "Contact CHIC Flowers: Let's Create Your Dream Event",
     description:
-      "Reach out to CHIC Flowers for inquiries about our bespoke wedding floral designs. We are here to assist you in creating stunning flower arrangements for your special day in San Diego and Los Angeles.",
+      "Get in touch with CHIC Flowers for luxury wedding and event design services. We’re here to help you bring your vision to life in San Diego and LA.",
     type: "website",
     url: "https://chicflowers.com/contact",
     images: [
@@ -32,9 +32,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Contact CHIC Flowers | Luxury Wedding Florist San Diego & Los Angeles",
+      "Contact CHIC Flowers: Let's Create Your Dream Event",
     description:
-      "Get in touch with CHIC Flowers, the top luxury wedding florist in San Diego and Los Angeles. Let us create elegant and high-end wedding flower arrangements tailored to your dream wedding.",
+      "Get in touch with CHIC Flowers for luxury wedding and event design services. We’re here to help you bring your vision to life in San Diego and LA.",
     images: ["https://chicflowers.com/twitter.png"],
     creator: "@alona_chasin",
   },

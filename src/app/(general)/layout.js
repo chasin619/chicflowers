@@ -9,13 +9,13 @@ import { Nunito_Sans } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
 export const metadata = {
-  title: "CHIC Flowers - Luxury Wedding Florist in San Diego & Los Angeles",
+  title: "Chic Flowers - Luxury Wedding Florist in San Diego and LA",
   description:
-    "CHIC Flowers specializes in bespoke wedding floral designs, including elegant bouquets, high-end centerpieces, and exclusive backdrops, making your special day unforgettable in San Diego and Los Angeles.",
+    "Chic Flowers One of the best wedding florists San Diego, specializing in luxury weddings and elegant floral designs in Los Angeles and Laguna Beach.",
   openGraph: {
-    title: "CHIC Flowers | Luxury Wedding Florist San Diego & Los Angeles",
+    title: "Chic Flowers - Luxury Wedding Florist in San Diego and LA",
     description:
-      "Discover CHIC Flowers, the top luxury wedding florist in San Diego and Los Angeles. We create elegant and high-end wedding flower arrangements tailored to your perfect day.",
+      "Chic Flowers One of the best wedding florists San Diego, specializing in luxury weddings and elegant floral designs in Los Angeles and Laguna Beach.",
     type: "website",
     url: "https://chicflowers.com/",
     images: [
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CHIC Flowers - Luxury Wedding Florist in San Diego & Los Angeles",
+    title: "Chic Flowers - Luxury Wedding Florist in San Diego and LA",
     description:
-      "CHIC Flowers specializes in bespoke wedding floral designs, including elegant bouquets, high-end centerpieces, and exclusive backdrops, making your special day unforgettable in San Diego and Los Angeles.",
+      "Chic Flowers One of the best wedding florists San Diego, specializing in luxury weddings and elegant floral designs in Los Angeles and Laguna Beach.",
     images: ["https://chicflowers.com/twitter.png"],
     creator: "@alona_chasin",
   },
