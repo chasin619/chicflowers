@@ -8,23 +8,8 @@ const ContactPreferencesForm = ({ data, updateFields, personalInfo }) => {
     updateFields("additionalInfo", { [name]: value });
   };
 
-  const handleSelect = (name: string, type: any) => {
-    const contactType = type[0];
+  const handleSelect = (name: string, type: string) => {
     updateFields("additionalInfo", { [name]: type });
-
-    switch (contactType) {
-      case "EMAIL":
-        updateFields("additionalInfo", { contact: personalInfo.email });
-        break;
-
-      case "PHONE":
-        updateFields("additionalInfo", { contact: personalInfo.phoneNo });
-        break;
-
-      default:
-        updateFields("additionalInfo", { contact: "" });
-        break;
-    }
   };
 
   return (

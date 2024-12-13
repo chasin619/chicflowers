@@ -21,7 +21,7 @@ export async function POST(request: Request) {
     <h2>Event Inquiry Form Submission</h2>
     <h3>Personal Information</h3>
     <p><strong>Full Name:</strong> ${personalInfo.fullName}</p>
-    <p><strong>Location:</strong> ${personalInfo.location}</p>
+    <p><strong>Phone No:</strong> ${personalInfo.phoneNo}</p>
     <p><strong>Email:</strong> ${personalInfo.email}</p>
     <p><strong>Event Date:</strong> ${personalInfo.eventDate}</p>
     <p><strong>Event Type:</strong> ${personalInfo.eventType}</p>
@@ -31,20 +31,11 @@ export async function POST(request: Request) {
     <p><strong>Wedding Investment:</strong> ${
       financialInfo.weddingInvestment
     }</p>
-    <p><strong>Decor Investment:</strong> ${financialInfo.decorInvestment}</p>
-    <p><strong>Extra Services:</strong> ${financialInfo.extraService
-      .map(
-        (service) =>
-          service.charAt(0).toUpperCase() + service.slice(1).toLowerCase()
-      )
-      .join(", ")}</p>     
+    <p><strong>Decor Investment:</strong> ${financialInfo.decorInvestment}</p>  
     <h3>Media Information</h3>
     <p><strong>Description:</strong> ${media.description}</p>
     
     <h3>Additional Information</h3>
-    <p><strong>Preferred Contact Type:</strong> ${
-      additionalInfo.contactType
-    }</p>
     ${
       additionalInfo.instagramHandle
         ? `<p><strong>Instagram Handle:</strong> ${additionalInfo.instagramHandle}</p>`
@@ -55,13 +46,9 @@ export async function POST(request: Request) {
         ? `<p><strong>TikTok Handle:</strong> ${additionalInfo.tiktokHandle}</p>`
         : ""
     }
-    <p><strong>Permission to Share Pictures:</strong> ${
-      additionalInfo.sharePicture
-    }</p>
     <p><strong>How Did You Hear About Us:</strong> ${
       additionalInfo.hearAbout
     }</p>
-    <p><strong>Contact Details:</strong> ${additionalInfo.contact}</p>
   `,
     attachments: media.visuals.map((visual) => ({
       filename: visual.name,
