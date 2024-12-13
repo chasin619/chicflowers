@@ -8,13 +8,11 @@ import { Nunito_Sans } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
 export const metadata = {
-  title:
-    "Contact CHIC Flowers: Let's Create Your Dream Event",
+  title: "Contact CHIC Flowers: Let's Create Your Dream Event",
   description:
     "Get in touch with CHIC Flowers for luxury wedding and event design services. We’re here to help you bring your vision to life in San Diego and LA.",
   openGraph: {
-    title:
-      "Contact CHIC Flowers: Let's Create Your Dream Event",
+    title: "Contact CHIC Flowers: Let's Create Your Dream Event",
     description:
       "Get in touch with CHIC Flowers for luxury wedding and event design services. We’re here to help you bring your vision to life in San Diego and LA.",
     type: "website",
@@ -31,12 +29,15 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Contact CHIC Flowers: Let's Create Your Dream Event",
+    title: "Contact CHIC Flowers: Let's Create Your Dream Event",
     description:
       "Get in touch with CHIC Flowers for luxury wedding and event design services. We’re here to help you bring your vision to life in San Diego and LA.",
     images: ["https://chicflowers.com/twitter.png"],
     creator: "@alona_chasin",
+  },
+  metadataBase: new URL("https://chicflowers.com/"),
+  alternates: {
+    canonical: "./",
   },
 };
 

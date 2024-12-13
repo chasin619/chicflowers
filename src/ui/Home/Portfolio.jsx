@@ -33,7 +33,6 @@ const Portfolio = () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
-  console.log(portfolios);
 
   return (
     <div

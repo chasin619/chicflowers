@@ -42,9 +42,9 @@ export const metadata = {
     name: "CHIC Flowers",
     description:
       "CHIC Flowers specializes in bespoke wedding floral designs, including elegant bouquets, high-end centerpieces, and exclusive backdrops, making your special day unforgettable in San Diego and Los Angeles.",
-    url: "https://yourwebsite.com/",
-    logo: "https://yourwebsite.com/images/logo.png",
-    image: "https://yourwebsite.com/images/home-og.jpg",
+    url: "https://chicflowers.com/",
+    logo: "https://chicflowers.com/images/logo.png",
+    image: "https://chicflowers.com/images/home-og.jpg",
     telephone: "+1-234-567-890",
     address: {
       "@type": "PostalAddress",
@@ -60,6 +60,10 @@ export const metadata = {
       "https://www.linkedin.com/company/chicflowers",
       "https://twitter.com/chicflowers_sd",
     ],
+  },
+  metadataBase: new URL("https://chicflowers.com/"),
+  alternates: {
+    canonical: './',
   },
 };
 
@@ -127,13 +131,9 @@ const schemaData = {
 };
 
 export default function RootLayout({ children }) {
-  const canonicalUrl =
-    typeof window !== "undefined" ? window.location.href : "";
-
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href={canonicalUrl} />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-E7NY2W59JZ"
