@@ -37,6 +37,7 @@ export const metadata = {
     creator: "@alona_chasin",
   },
 };
+
 const About = () => {
   return (
     <div className="relative w-full mt-10 flex justify-center items-center flex-col">
