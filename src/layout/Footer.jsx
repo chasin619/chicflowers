@@ -52,6 +52,9 @@ const Footer = () => {
             <Link href="/contact" legacyBehavior>
               <li>Event Inquiries</li>
             </Link>
+            <Link href="https://www.velourweb.com" target="_blank" >
+              <li className="cursor-pointer">Powered by - Velour Web</li>
+            </Link>
           </ul>
 
           <div className="flex text-xl sm:text-2xl gap-5">

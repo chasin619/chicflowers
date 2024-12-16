@@ -1,23 +1,30 @@
+import React from "react";
+import Link from "next/link";
+
 import {
   faFacebookF,
   faInstagram,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 
 const DetailSection = () => {
   return (
     <div className="text-black md:pl-8 md:px-0 mobile:px-8 flex flex-col justify-between h-[80vh] mobile:w-full md:w-1/3">
-      <h2 className="text-6xl font-bold">LET'S PLAY</h2>
+      <h2 className="text-6xl font-bold">{`LET'S PLAY`}</h2>
 
       <div className="flex mt-8 flex-col">
         <div className="mb-8">
           <p className="text-xl mb-2">619-919-2437</p>
           <p className="text-xl mb-2">chicflowersonline@gmail.com</p>
-          <p className="text-xl mb-4">Event Inquiries</p>
+          <p className="text-xl mb-2">Event Inquiries</p>
+          <Link href="https://www.velourweb.com" target="_blank">
+            <p className="cursor-pointer text-xl mb-4">
+              Powered by - Velour Web
+            </p>
+          </Link>
           <p className="text-xl border-black border-y py-3">
-          777 5th ave <br /> San Diego, CA 92101
+            777 5th ave <br /> San Diego, CA 92101
           </p>
         </div>
         <div className="space-x-6">
