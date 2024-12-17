@@ -7,3 +7,12 @@ export const formatDate = (date: string | Date): string => {
   };
   return new Date(date).toLocaleDateString("en-US", options);
 };
+
+export const getHeaders = () => {
+  return {
+    headers: {
+      "Content-Type": "application/json",
+      userId: "6753605729f2b4c6bcc6cfe6",
+    },
+  };
+};
