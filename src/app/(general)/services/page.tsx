@@ -3,12 +3,12 @@ import Page from ".";
 
 export const metadata = {
   title:
-    "Capabititis page - Our Services: Event Design, Wedding flowers, Event Planning",
+    "Services page - Our Services: Event Design, Wedding flowers, Event Planning",
   description:
     "CHIC Flowers offers event design, stunning wedding florals, and expert event planning to create luxurious, unforgettable celebrations tailored to you.",
   openGraph: {
     title:
-      "Capabititis page - Our Services: Event Design, Wedding flowers, Event Planning",
+      "Services page - Our Services: Event Design, Wedding flowers, Event Planning",
     description:
       "CHIC Flowers offers event design, stunning wedding florals, and expert event planning to create luxurious, unforgettable celebrations tailored to you.",
     type: "website",
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Capabititis page - Our Services: Event Design, Wedding flowers, Event Planning",
+      "Services page - Our Services: Event Design, Wedding flowers, Event Planning",
     description:
       "CHIC Flowers offers event design, stunning wedding florals, and expert event planning to create luxurious, unforgettable celebrations tailored to you.",
     images: ["https://chicflowers.com/twitter.png"],

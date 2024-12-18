@@ -20,7 +20,7 @@ const InstagramFeed = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center text-center mt-24 sm:mt-32 lg:mt-40 mb-10 gap-9 sm:gap-12">
+    <div className="flex flex-col items-center text-center mt-10 sm:mt-6 lg:mt-14 mb-10 gap-9 sm:gap-12">
       <h2 className="uppercase text-[40px] sm:text-[46px] lg:text-[52px] !leading-[1.1em] font-medium">
         FOLLOW ALONG
       </h2>

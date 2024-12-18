@@ -14,8 +14,8 @@ const EventShowcase = () => {
         </p>
       </h2>
 
-      <div className="flex flex-col w-full gap-10">
-        <span>AS SEEN IN:</span>
+      <div className="flex flex-col w-full gap-10 border-t border-black">
+        <span className="mt-6">AS SEEN IN:</span>
 
         <div className="flex w-full items-center gap-10 flex-wrap justify-center">
           <Image

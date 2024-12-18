@@ -118,7 +118,7 @@ const Reviews = () => {
   };
 
   return (
-    <div className="my-24 md:y-32 space-y-10 lg:space-y-12 bg-black text-white py-10">
+    <div className="my-8 md:y-32 space-y-10 lg:space-y-12 bg-black text-white py-10">
       <div className="px-3 md:px-6 lg:px-12 flex flex-col gap-0.5 justify-center items-center">
         <h2 className="text-[30px] sm:text-[36px] lg:text-[44px] xl:text-[52px] font-medium !leading-[1.15]">
           PRAISE FOR CHIC

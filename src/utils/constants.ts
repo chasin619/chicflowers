@@ -130,8 +130,8 @@ export const navRoutes = [
     name: "About",
   },
   {
-    href: "/capabilities",
-    name: "Capabilities",
+    href: "/services",
+    name: "Services",
   },
   {
     href: "/contact",
