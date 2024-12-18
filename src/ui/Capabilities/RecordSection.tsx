@@ -5,26 +5,40 @@ const RecordSection = () => {
   return (
     <div className="w-full lg:px-20 lg:py-28 mobile:px-4 mobile:py-20 xl:mt-[2000px] lg:mt-[2000px] md:mt-[2000px] mobile:mt-[500px]">
       <h1 className="lg:text-5xl mobile:text-3xl uppercase font-medium">
-        In Record Time
+        What We Provide 
       </h1>
       <p className="lg:text-xl mobile:text-base font-medium text-left mt-2 lg:w-[900px] mobile:w-90">
-        At Chic, we bring together design mastery and precision engineering to create stunning floral 
-        installations and wedding decor that others only dream of. As leaders in wedding flowers in San Diego, 
-        we deliver intricate, large-scale designs in record time—turning your vision into reality in days rather than months.
-        From concept to completion, our team combines innovative design with flawless execution, ensuring every detail is both
-        structurally sound and visually breathtaking. We’ve perfected the art of balancing creativity with technical expertise,
-        making the extraordinary look effortless.
-        No matter your timeline, our expertly engineered process ensures your dream wedding flowers and decor are brought to life 
-        with unmatched speed and perfection, right here in San Diego.
+        Artistic floral work in house with the finest product available world wide.
+
+        Curate unforgettable experiences with flowers and installations
+
+        Custom Built, structures, Ceilings, Elevated pieces, including natural materials as well as steal, glass, wood. 
+
+        We own our ceremony structures and columns, runners
+
+        25+ professional team member exclusively trained and educated in house. 
+
+        We can accommodate any custom requests
+
+        We make every effort to work within client budget expectation.
+
+        We are not planners, but a planners best friend
+
+
+        We take on a limited handful of clients per year to ensure our availability and to also ensure our continued inspiration in our field.
+
+        We specialize in crafting luxurious floral designs and event decor 
       </p>
-      <p className="text-[18px] font-medium text-left lg:mb-40 lg:w-[900px] mobile:mb-20 mobile:w-90">
-        Whatever timeline you’re on, this is our process.
+      
+      <p className="lg:text-5xl mobile:text-3xl uppercase font-medium">
+        Our process:
       </p>
       <div className="flex items-center lg:gap-20 mobile:gap-4">
         <div className="flex lg:gap-20 mobile:gap-16 flex-col w-20">
-          <p className="rotate-90 text-[12px]">YOU</p>
+        <p className="vertical-text text-[12px]">YOU</p>
+
           <p className="w-20 p-2 bg-black text-[12px] text-white rounded-full flex items-center justify-center font-medium">
-            PHASE 4
+            STEPS
           </p>
           <p className="rotate-90 text-[12px]">Chic</p>
         </div>

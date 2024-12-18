@@ -37,8 +37,8 @@ const HeroSectionMobile = () => {
           }}
           className="sticky top-0 left-0 h-[120vh]"
         >
-          <Image src="/wedding.jpeg" alt="Wedding" fill objectFit="cover" />
-        </motion.div>
+        {/* <Image src="/wedding.jpeg" alt="Wedding" fill objectFit="cover" /> */}
+         </motion.div> 
 
         <div className="absolute inset-0 top-[100px] flex flex-col justify-center items-center">
           <motion.h1

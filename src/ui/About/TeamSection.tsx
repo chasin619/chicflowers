@@ -6,7 +6,7 @@ import React from "react";
 const TeamSection = () => {
   return (
     <section className="w-full mt-24">
-      <h1 className="lg:text-5xl mobile:text-3xl font-medium uppercase border-t border-b border-black py-7">
+      <h1 className="lg:text-5xl mobile:text-3xl font-medium uppercase border-t border-b border-black py-7 text-center">
         Our Team
       </h1>
       <div className="w-full h-[60%] relative mt-4">

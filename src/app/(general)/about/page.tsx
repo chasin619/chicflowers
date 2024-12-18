@@ -43,7 +43,7 @@ const About = () => {
     <div className="relative w-full mt-10 flex justify-center items-center flex-col">
       <HeroSection />
       <div className="mt-20 flex justify-center items-center flex-col md:px-20 mobile:px-6">
-        <h1 className="text-center mobile:text-2xl md:text-3xl lg:text-4xl uppercase">
+        <h1 className="text-center mobile:text-4xl md:text-5xl lg:text-6xl uppercase">
           The Chic Edge
         </h1>
         <p className="text-center mt-4 mb-8 lg:text-2xl md:text-xl mobile:text-lg font-medium lg:w-[60%] mobile:w-[100%]">

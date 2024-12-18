@@ -16,7 +16,7 @@ const Footer = () => {
 
         <Link href="/contact">
           <div className="text-black flex flex-col items-center gap-2.5 hover:text-[#18799B] transition-colors duration-300 cursor-pointer">
-            <h2 className="text-[65px] xs:text-[100px] md:text-[70px] !leading-none pb-[0.25em] border-b border-current ">
+            <h2 className="text-[45px] xs:text-[50px] md:text-[60px] !leading-none pb-[0.25em] border-b border-current ">
               CHIC
             </h2>
 

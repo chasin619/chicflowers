@@ -106,7 +106,7 @@ export default function Home() {
         className="flex justify-center items-center px-4 absolute bottom-[-80rem] z-10 bg-[#f0f0f0] h-screen w-full"
         style={{ opacity: paragraphOpacity, y: paragraphY }}
       >
-        <motion.p className="text-black text-center font-[FaktNormal] text-[30px] m-auto w-1/2 ">
+        <motion.p className="text-black text-center font-[FaktNormal] text-[36px] m-auto w-1/2 ">
          No matter what you envision or when you need it, Chic is fully committed. 
           Over the years, we've honed the art of turning dreams into realities – 
           and making it happen in record time. Our team thrives on exceeding expectations,
