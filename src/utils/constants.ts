@@ -15,10 +15,14 @@ export const BASE_URL = "https://velourweb-admin.vercel.app";
 
 export const CapabilityAccordionData: AccordionItem[] = [
   {
-    title: "The Look",
+    title: " Floral Design and Arrangements",
     content:
       "Zoom out and see the big picture of your event. Even if you can’t envision it yet, trust that we can—and we’ll execute it flawlessly.",
-    lists: ["Event Design", "Design Consulting", "Floral Design"],
+    lists: [
+     "Bouquets: Bridal bouquets, bridesmaids’ bouquets, and flower girl baskets.",
+      "Ceremony Flowers: Altar arrangements, aisle markers, arches, chuppahs, or mandap decorations.",
+      "Reception Flowers: Centerpieces, table garlands, cake flowers, and bar arrangements.", 
+      "Wearable Flowers: Boutonnieres, corsages, flower crowns, or floral jewelry."],
     images: [
       "/look-accordion-1.jpg",
       "/look-accordion-2.jpg",
@@ -26,30 +30,87 @@ export const CapabilityAccordionData: AccordionItem[] = [
     ],
   },
   {
-    title: "The Feel",
+    title: "Venue Styling and Decor",
     content:
       "There’s no looking good without feeling good. These are the key components that make an event flow with ease and cohesion, so all you have to do is have a good time.",
     lists: [
-      "Event Production",
-      "Floor Plans",
-      "Testing + Staging",
+      "Custom Decor Setup: Draping, candles, lanterns, and other decorative elements to complement the floral arrangements.",
+      "Theme Development: Creating a cohesive design plan that aligns with the couple's wedding theme (e.g., rustic, bohemian, modern).",
+      "Lighting Coordination: Integrating lighting elements like fairy lights or uplighting to enhance the ambiance.",
       "Custom Dance Floors",
       "Custom-Built Furnishings",
     ],
     images: ["/feel-accordion-1.jpg", "/feel-accordion-2.jpg"],
   },
   {
-    title: "The Details",
+    title: "Conceptual Design and Planning",
     content:
       "The finer things live in the details. The Chic treatment means no need is too small, and nothing is overlooked.",
     lists: [
-      "Custom Linen",
-      "TableWare",
+      "Mood Boards: Developing visual inspiration boards to showcase design concepts.",
+      "Color Palette Consultation: Helping the couple choose complementary colors for flowers and decor.",
       "Invitations + Day-Of Stationery",
-      "Favors + Accessories",
+      "Design Mockups: Providing samples or small-scale mockups of centerpiece ideas or floral designs.",
       "Bespoke Finishing Touches ",
     ],
-    images: ["/detail-accordion-1.jpeg", "/studio-3.jpeg", "/studio-7.jpeg"],
+    images: ["/detail-accordion-1.jpeg", "/studio-3.webp", "/studio-7.webp"],
+  },
+  {
+    title: "Delivery and Installation",
+    content:
+      "The finer things live in the details. The Chic treatment means no need is too small, and nothing is overlooked.",
+    lists: [
+      "On-Site Setup: Delivering and arranging flowers at the venue on the wedding day.",
+      "Pinning Flowers: Assisting with pinning boutonnieres or attaching corsages..",
+      "Ceremony-to-Reception Transfers: Moving floral arrangements from the ceremony to the reception when needed.",
+    ],
+  },
+  {
+    title: "Rentals and Accessories",
+    content:
+      "The finer things live in the details. The Chic treatment means no need is too small, and nothing is overlooked.",
+    lists: [
+      "Vases and Containers: Providing vases, urns, or other vessels for floral arrangements.",
+      "Arches and Structures: Renting out arches, stands, or flower walls for the ceremony and reception.",
+      "Candles and Holders: Supplying taper candles, votives, or hurricane lanterns.",
+    ],
+  },
+  {
+    title: "Sustainable Practices",
+    lists: [
+      "Repurposing Flowers: Arranging for floral donations or repurposing ceremony flowers for the reception.",
+      "Eco-Friendly Options: Using locally sourced flowers, sustainable materials, or foam-free designs.",
+    ],
+  },
+  {
+    title: "Full-Service Packages",
+    // content:
+    //   "The finer things live in the details. The Chic treatment means no need is too small, and nothing is overlooked.",
+    lists: [
+      "End-to-End Coordination: Managing all floral and decor needs, including communication with the couple and other vendors.",
+      "Wedding Day Management: Being present to oversee floral placement and troubleshoot decor issues.",
+     
+    ],
+  },
+  {
+    title: "Post-Wedding Services",
+    // content:
+    //   "The finer things live in the details. The Chic treatment means no need is too small, and nothing is overlooked.",
+    lists: [
+      "Flower Preservation: Offering bouquet preservation or keepsake arrangements.",
+      "Clean-Up Services: Handling post-event floral removal and disposal.",
+     
+    ],
+  },
+  {
+    title: "Additional Value-Added Services",
+    // content:
+    //   "The finer things live in the details. The Chic treatment means no need is too small, and nothing is overlooked.",
+    lists: [
+      "Collaborations with Other Vendors: Coordinating with planners, photographers, and lighting designers to ensure cohesive decor.",
+      "Workshops: Teaching DIY flower arrangement classes for bridal parties (pre-wedding).",
+      "Personalization: Customizing designs to reflect cultural traditions or personal stories.",
+    ],
   },
 ];
 

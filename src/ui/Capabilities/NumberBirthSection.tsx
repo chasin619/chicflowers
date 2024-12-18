@@ -3,9 +3,9 @@ import React from "react";
 
 const NumberBirthSection = () => {
   const countingData = [
-    { target: "1200", text: "Events in the books" },
-    { target: "120000", text: "Guest Experiences" },
-    { target: "1000000", text: "Eyes reached online" },
+    { target: "1050", text: "Events in the books" },
+    { target: "105000", text: "Guest Experiences" },
+    { target: "5000000", text: "Eyes reached online" },
   ];
 
   return (
