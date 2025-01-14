@@ -1,10 +1,8 @@
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
-import axios from "axios";
 
-import { BASE_URL } from "@/utils/constants";
 import { zustandStorage } from "./storage/storage";
-import { getHeaders } from "@/utils/helpers";
+import api from "@/utils/api";
 
 interface BlogStore {
   blogs: any[];
@@ -34,10 +32,7 @@ const useHomeStore = create(
       },
       getAllBlogs: async () => {
         try {
-          const headers = getHeaders();
-          const response = await axios.get(`${BASE_URL}/api/blog/get-blogs`, {
-            ...headers,
-          });
+          const response = await api.get(`/blog`);
           set({ blogs: response.data.blogs });
         } catch (error: any) {
           console.error("Error fetching blogs:", error.message);
@@ -45,13 +40,7 @@ const useHomeStore = create(
       },
       getReviews: async () => {
         try {
-          const headers = getHeaders();
-          const response = await axios.get(
-            `${BASE_URL}/api/review/get-reviews`,
-            {
-              ...headers,
-            }
-          );
+          const response = await api.get(`/review`);
           set({ reviews: response.data.reviews });
         } catch (error: any) {
           console.error("Error fetching reviews:", error.message);
@@ -59,13 +48,7 @@ const useHomeStore = create(
       },
       getPortfolios: async () => {
         try {
-          const headers = getHeaders();
-          const response = await axios.get(
-            `${BASE_URL}/api/portfolio/get-portfolios`,
-            {
-              ...headers,
-            }
-          );
+          const response = await api.get(`/portfolio`);
           set({ portfolios: response.data.portfolios });
         } catch (error: any) {
           console.error("Error fetching portfolios:", error.message);
